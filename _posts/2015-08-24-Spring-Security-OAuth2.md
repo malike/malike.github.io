@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Using Spring Security OAuth 2.0 and MongoDB to secure a Microservice/SOA  System
 author: "malike_st"
-categories: 'distributed'
+categories: distributed
 tags: [documentation,sample]
 image: security_question.png
 ---
