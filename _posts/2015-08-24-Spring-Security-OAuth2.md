@@ -6,6 +6,7 @@ author: "malike_st"
 section: distributed
 tags: [documentation,sample]
 image: security_question.png
+redirect_from: "/Spring-Security-OAuth2/"
 ---
 
 
