@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Happy New Year
 author: "malike_st"
-categories: stuff
+section: stuff
 tags: [documentation,sample]
 image: 2016_conversation_guide.png
 ---

@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Exploring LDAP Integration With Spring's AuthenticationProvider,OAuth2 and MongoDB for a SSO service
-categories: distributed
+section: distributed
 author: "malike_st"
 tags: [documentation,sample]
 image: exploits_of_a_mom.png

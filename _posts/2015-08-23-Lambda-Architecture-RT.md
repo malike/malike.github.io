@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Lambda Architecture With Kafka, ElasticSearch, Apache Storm and MongoDB
 author: "malike_st"
-categories: distributed
+section: distributed
 tags: [documentation,sample]
 image: im_an_idiot.png
 ---

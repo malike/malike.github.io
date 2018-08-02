@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Creating An In-Memory FIFO Cache
 author: "malike_st"
-categories: tech
+section: tech
 tags: [documentation,sample]
 image: linkedhashmap-queues.jpg
 size: default

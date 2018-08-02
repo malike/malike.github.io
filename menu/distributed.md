@@ -6,7 +6,7 @@ title: Cloud Native / Distributed Systems
 {::nomarkdown}
 
 {% for post in site.posts %}
-{% if post.categories contains "distributed" %}
+{% if post.section contains "distributed" %}
 <div class="posts">
   <h1>
     <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>

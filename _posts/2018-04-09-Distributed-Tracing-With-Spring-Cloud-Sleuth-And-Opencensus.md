@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Distributed Tracing with Spring Cloud Sleuth and Opencensus
 author: "malike_st"
-categories: distributed
+section: distributed
 tags: [distributed,tracing,opencensus,elasticsearch,microservice]
 image: microservices-and-monolithic.png
 projectname: Distributed Tracing for Microservices

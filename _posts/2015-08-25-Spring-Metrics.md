@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Spring Metrics For Simple Event Monitoring
 author: "malike_st"
-categories: tech
+section: tech
 tags: [documentation,sample]
 image: screwupcolor.png
 ---

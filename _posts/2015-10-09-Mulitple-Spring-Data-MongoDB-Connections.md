@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Multiple Spring Data MongoDB Connections
 author: "malike_st"
-categories: tech
+section: tech
 tags: [documentation,sample]
 image: dilbert-19960228.gif
 ---

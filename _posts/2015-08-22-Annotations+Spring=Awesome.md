@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Java Annotations + Spring = Awesome
 author: "malike_st"
-categories: tech
+section: tech
 tags: [documentation,sample]
 image: academia_vs_business.png
 ---

@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Design Thinking Approach For Hobby Robotics Project - Part 2
-categories: electronics
+section: electronics
 author: "malike_st"
 tags: [documentation,sample]
 image: the_three_laws_of_robotics.png

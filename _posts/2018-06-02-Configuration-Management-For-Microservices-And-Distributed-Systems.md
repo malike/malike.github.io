@@ -4,7 +4,7 @@ comments: true
 title: Configuration Management for Microservices
 layout: post
 author: "malike_st"
-categories: 'distributed'
+section: distributed
 tags: [distributed,configuration,zookeeper,elasticsearch,microservice]
 fossname: go-kafka-alert
 fossurl: https://malike.github.io/go-kafka-alert/   

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Customer Stickiness For Your Enterprise
 author: "malike_st"
-categories: stuff
+section: stuff
 tags: [documentation,sample]
 image: 2011.08.30_customer_retention.png
 ---

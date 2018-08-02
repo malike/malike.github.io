@@ -6,7 +6,7 @@ title: Electronics
 {::nomarkdown}
 
 {% for post in site.posts %}
-{% if post.categories contains "electronics" %}
+{% if post.section contains "electronics" %}
 <div class="posts">
   <h1>
     <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>

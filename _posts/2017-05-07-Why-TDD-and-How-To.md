@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Why TDD and How To With Fluentlenium, RestAssured, HamCrest and Mockito
 author: "malike_st"
-categories: tech
+section: tech
 tags: [tdd,test,test-driven-development]
 image: dilbert_tdd.gif
 ---

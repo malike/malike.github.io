@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: ... a little more with spring metrics
 author: "malike_st"
-categories: tech
+section: tech
 tags: [documentation,sample]
 image: tape_measure.png
 ---
