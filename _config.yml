@@ -4,7 +4,7 @@
 #  pagination:
 #   enabled: true
 #   per_page: 5
-#   permalink: '/page/:num/'
+#   permalink: '/:title/'
 #   title: ':title - page :num of :max'
 #   limit: 0
 #   sort_field: 'date'
