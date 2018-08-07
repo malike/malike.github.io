@@ -6,7 +6,7 @@ author: "malike_st"
 section: tech
 tags: [documentation,sample]
 image: linkedhashmap-queues.jpg
-size: default
+redirect_from: "/Queue-LinkedHashMap/"
 ---
 
 

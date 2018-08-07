@@ -6,6 +6,7 @@ author: "malike_st"
 section: stuff
 tags: [documentation,sample]
 image: 2011.08.30_customer_retention.png
+redirect_from: "/Customer-Stickiness-For-Your-Enterprise/"
 ---
 
 

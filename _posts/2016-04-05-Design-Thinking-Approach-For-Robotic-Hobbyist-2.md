@@ -6,6 +6,7 @@ section: electronics
 author: "malike_st"
 tags: [documentation,sample]
 image: the_three_laws_of_robotics.png
+redirect_from: "/Design-Thinking-Approach-For-Robotic-Hobbyist-2/"
 ---
 
 

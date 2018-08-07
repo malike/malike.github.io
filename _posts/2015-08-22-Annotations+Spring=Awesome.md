@@ -6,6 +6,7 @@ author: "malike_st"
 section: tech
 tags: [documentation,sample]
 image: academia_vs_business.png
+redirect_from: "/Annotations+Spring=Awesome/"
 ---
 
 Java Annotations are really cool. They give this feature to send extra information that can be used during runtime

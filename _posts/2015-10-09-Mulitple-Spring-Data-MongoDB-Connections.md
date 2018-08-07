@@ -6,6 +6,7 @@ author: "malike_st"
 section: tech
 tags: [documentation,sample]
 image: dilbert-19960228.gif
+redirect_from: "/Mulitple-Spring-Data-MongoDB-Connections/"
 ---
 
 

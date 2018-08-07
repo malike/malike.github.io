@@ -6,7 +6,7 @@ section: distributed
 author: "malike_st"
 tags: [documentation,sample]
 image: exploits_of_a_mom.png
-
+redirect_from: "/Spring-Security-OAuth2-With-LDAP/"
 ---
 
 

@@ -6,6 +6,7 @@ author: "malike_st"
 section: tech
 tags: [tdd,test,test-driven-development]
 image: dilbert_tdd.gif
+redirect_from: "/Why-TDD-and-How-To/"
 ---
 
 ### 1. What's TDD?

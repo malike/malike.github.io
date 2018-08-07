@@ -6,6 +6,7 @@ author: "malike_st"
 section: tech
 tags: [documentation,sample]
 image: screwupcolor.png
+redirect_from: "/Spring-Metrics/"
 ---
 
 

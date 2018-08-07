@@ -9,6 +9,7 @@ image: microservices-and-monolithic.png
 projectname: Distributed Tracing for Microservices
 projectdescription: Distributed tracing project  using Zipkin and ELK to visualize traces exported with Spring Cloud Sleuth, Logstash and Opencensus
 projecturl: https://github.com/malike/distributed-tracing
+redirect_from: "/Distributed-Tracing-With-Spring-Cloud-Sleuth-And-Opencensus/"
 ---
 
 #### 1. What's Distributed Tracing?

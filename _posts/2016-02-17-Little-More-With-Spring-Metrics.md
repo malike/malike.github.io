@@ -6,6 +6,7 @@ author: "malike_st"
 section: tech
 tags: [documentation,sample]
 image: tape_measure.png
+redirect_from: "/Little-More-With-Spring-Metrics/"
 ---
 
 

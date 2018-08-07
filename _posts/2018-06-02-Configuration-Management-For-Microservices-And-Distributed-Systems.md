@@ -13,6 +13,7 @@ projectname: Configuration Management for Cloud Native/Distributed Systems
 projectdescription: Project to show how to use Centralized Configuration Management in a cloud native or distributed systems
 projecturl: https://github.com/malike/centralized-configuration-mangement
 image: dilbert-cartoon.jpg
+redirect_from: "/Configuration-Management-For-Microservices-And-Distributed-Systems/"
 ---
 
 

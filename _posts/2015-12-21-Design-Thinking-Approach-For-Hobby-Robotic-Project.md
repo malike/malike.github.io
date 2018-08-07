@@ -3,9 +3,10 @@ layout: post
 comments: true
 title: Design Thinking Approach For Hobby Robotics Project
 author: "malike_st"
-categories: "electronics"
+section: "electronics"
 tags: [documentation,sample]
 image: new_pet.png
+redirect_from: "/Design-Thinking-Approach-For-Hobby-Robotic-Project/"
 ---
 
 I work at [DreamOval](http://dreamoval.com) and we were priviledged to be part of the [Stanford Seed](https://seed.stanford.edu/)

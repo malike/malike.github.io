@@ -6,6 +6,7 @@ author: "malike_st"
 section: distributed
 tags: [documentation,sample]
 image: im_an_idiot.png
+redirect_from: "/Lambda-Architecture-RT/"
 ---
 
 How I would use [Apache Storm](https://storm.apache.org/),[Apache Kafka](http://kafka.apache.org/),[ElasticSearch](http://www.elasticsearch.org/) and [MongoDB](https://www.mongodb.org) for a monitoring system based on the lambda architecture.

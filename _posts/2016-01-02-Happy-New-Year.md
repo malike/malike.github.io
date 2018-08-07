@@ -6,6 +6,7 @@ author: "malike_st"
 section: stuff
 tags: [documentation,sample]
 image: 2016_conversation_guide.png
+redirect_from: "/Happy-New-Year/"
 ---
 
 
