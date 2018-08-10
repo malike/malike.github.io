@@ -27,7 +27,7 @@ Because its movement is modeled after a bug we *(I)* should call it **Bug1**.
 
 ### 2. Check prototype and pick components.
 
-If this is not your first electronic project you probably would have identified some compnents in the prototype. Like the Ultrasonic Sensor and the servos. Two servos one for the front and rear legs for 
+If this is not your first electronic project you probably would have identified some components in the prototype. Like the Ultrasonic Sensor and the servos. Two servos one for the front and rear legs for 
 movement.
 
 *New to the hobby [servo](https://www.princeton.edu/~mae412/TEXT/NTRAK2002/292-302.pdf)? What about the [HC-SR04 ultrasonic sensor](http://www.elecfreaks.com/store/download/product/Sensor/HC-SR04/HC-SR04_Ultrasonic_Module_User_Guide.pdf)?*
@@ -40,7 +40,7 @@ movement.
 Bug1 uses two hobby servos for movement. With the arduino as the command. But the position of the two servos 
 to give the required movement is not that straight forward. 
 
-Honestly [this](http://www.eucognition.org/index.php?page=leg-coordination-in-insect-walking) was what I wanted but the point of this post is to focus on the methodolgy not the actual project. I had to create a constant reminder of this because I kept drifting away.
+Honestly [this](http://www.eucognition.org/index.php?page=leg-coordination-in-insect-walking) was what I wanted but the point of this post is to focus on the methodology not the actual project. I had to create a constant reminder of this because I kept drifting away.
 
 From the diagram above, if the part labelled **2** (front right leg) moves forward that is 120 degrees **3** (front left leg)would be 60 degrees. The back and forth of this movement would push *Bug1* forward.
 
@@ -125,7 +125,7 @@ We can calculate the distance of the object from the sensor (*Bug1*) as
 
 *Because the speed of light is approx 340 m/s at room temperature*
 
-**iv. [Bluetooth Reciever](http://cdn.sparkfun.com/datasheets/Wireless/Bluetooth/Bluetooth-RN-42-DS.pdf)**
+**iv. [Bluetooth Receiver](http://cdn.sparkfun.com/datasheets/Wireless/Bluetooth/Bluetooth-RN-42-DS.pdf)**
 
 Although not shown in our prototype this is the connection between our *command center* and the *Bug1*. We can send and recieve data from *Bug1*.
 
@@ -184,7 +184,7 @@ Since we using an Arduino any 5V battery would do.
 
 ### 4. Simulation.
 
-Before we jump in soldering and building *Bug1* lets first run a simulation to see how our code would run. Fortunately for us there are tons of tools to run this simaulation which you can find [here](http://smashingrobotics.com/arduino-simulators-lineup-start-developing-without-real-board/). I chose Protues.
+Before we jump in soldering and building *Bug1* lets first run a simulation to see how our code would run. Fortunately for us there are tons of tools to run this simulation which you can find [here](http://smashingrobotics.com/arduino-simulators-lineup-start-developing-without-real-board/). I chose Protues.
 
 If you decide to also use Protues check [this](https://github.com/malike/Bug1/tree/master/Proteus)  or just use the [codes](https://github.com/malike/Bug1/tree/master/Bug1) with any simulation tool.
 

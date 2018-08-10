@@ -20,7 +20,7 @@ Ok. Here is the summary of what I wanted to do and how I achieved it.
 
 ### What to do?
 
-* Design a framework that can easily be integrated to read data from mulitple sources and then index it in a single destination .
+* Design a framework that can easily be integrated to read data from multiple sources and then index it in a single destination .
 (This is a sample scenario)
 
 ### How I did it?

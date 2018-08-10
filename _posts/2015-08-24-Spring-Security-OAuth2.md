@@ -19,8 +19,8 @@ Because assuming you have two microservice working together to delivery a servic
 authentication and authorization for both microservices independently.
 Now that we are both on the same page that replicating authentication and authorization for all microservices is *really ..erm.*
 
-We both know we need to have a centralised authentication system  where a user authenticates and
-is authorized on one system, her privileges are recognised throughout all other microservices in the architecture. 
+We both know we need to have a centralized authentication system  where a user authenticates and
+is authorized on one system, her privileges are recognized throughout all other microservices in the architecture. 
 
 Let's talk a bit about **RESTful services**, **Stateless Sessions** and **Stateful Sessions**.
 
@@ -35,7 +35,7 @@ In any RESTful system, Number 3. is not encouraged. *Why?* It would mean that to
 This is not good. Assuming I have a huge user database it would be worse.
 
 The best next fit is to give the user a token once authenticated and this can be used for subsequent requests. 
-Token would be managed separetly from the users. Expired tokens deleted(To keep token storage small). This means that on a less busy day we would have just **1** token stored and **(user size ) == token size** on our busiest day. Compared to having
+Token would be managed separately from the users. Expired tokens deleted(To keep token storage small). This means that on a less busy day we would have just **1** token stored and **(user size ) == token size** on our busiest day. Compared to having
 same  **(user size)** for the busiest and less busy days,this is much better. 
 
 But in **THEORY**, RESTful systems should be **STATELESS**.
@@ -117,7 +117,7 @@ With these grant types we can authenticate and authorize users as well clients(w
 
 **Why [Spring Security OAuth2.0](http://projects.spring.io/spring-security-oauth/docs/oauth2.html) ?**
 
-Spring already has integration and support for LDAP(easy integration if your ***Single Sign On Authentication Server*** is an enterprse solution),Social platforms and Databases. 
+Spring already has integration and support for LDAP(easy integration if your ***Single Sign On Authentication Server*** is an enterprise solution),Social platforms and Databases. 
 
 The real question is 
 
@@ -157,7 +157,7 @@ I chose MongoDB. I need to mention that were some issues with the MongoDB conver
   .antMatchers("/**").authenticated()
 ```		
 
-*You'll see it doesnt work when you using this, which I did in my case*
+*You'll see it doesn't work when you using this, which I did in my case*
 
 ```xml
   <dependency>

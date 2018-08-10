@@ -12,7 +12,7 @@ redirect_from: "/Spring-Metrics/"
 
 Sometimes (or all the time) you would want to know whats happening in your application's life cycle. 
 [Spring Boot Metrics](http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-metrics.html) is just the right tool
-for application metrics in any [Spring Boot Applcation](https://spring.io/guides/gs/spring-boot/). It exposes 2 metrics services, **"Gauge"** ,  **"Counter"** out of the box as well as an interface **PublicMetrics** to capture custom
+for application metrics in any [Spring Boot Application](https://spring.io/guides/gs/spring-boot/). It exposes 2 metrics services, **"Gauge"** ,  **"Counter"** out of the box as well as an interface **PublicMetrics** to capture custom
 metrics. 
 
 We would use all 3 to capture application level metrics.
@@ -31,8 +31,8 @@ The first two are fairly simple. A simple 2 step process of ***initialize*** and
 
 **1. Gauge**
 
-A Gauge helps record a singule value. Data type is *double*.
-Autowirng  GaugeService before using it.
+A Gauge helps record a single value. Data type is *double*.
+Autowiring  GaugeService before using it.
 
 ```java
 @Autowired

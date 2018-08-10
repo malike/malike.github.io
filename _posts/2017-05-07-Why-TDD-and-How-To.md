@@ -46,11 +46,11 @@ I wasn't always on the TDD train. It felt rather long and unit testing (a centra
 
    ***c.  Perform an end to end after putting the whole application together.***
 
-The problem with this flow is I relied a lot on integration and end to end tests. Which are genrally slow. 
+The problem with this flow is I relied a lot on integration and end to end tests. Which are generally slow. 
 For example an end to end test of an end user updating their profile page would be blocked if the login end to end test fails.
 Testers would have to wait till the login works perfectly before moving on to test the profile update. Some of the bugs that only show up during end to end tests could have being discovered during unit test. 
 
-In summary, unit tests help to discover bugs just faster than integration tests, they also help to isolate bugs and are far more relaible to help devs discover bugs before end to end tests.
+In summary, unit tests help to discover bugs just faster than integration tests, they also help to isolate bugs and are far more reliable to help devs discover bugs before end to end tests.
 
    ***c. Discover [Regression Errors](https://en.wikipedia.org/wiki/Software_regression) Faster***
 
@@ -64,7 +64,7 @@ TDD would help you reduce regression errors. Once a test that used to pass start
 
 Overall confidence your deliverable increases. The specification doesn't just work on your machine but works Production,UAT and any other dev's machine.
 
-Well, there'll still be bugs but not as much as with TDD.
+Well, there will still be bugs but not as much as with TDD.
 
 ### 3. A Sample TDD Project
 

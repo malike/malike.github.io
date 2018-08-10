@@ -9,17 +9,17 @@ image: new_pet.png
 redirect_from: "/Design-Thinking-Approach-For-Hobby-Robotic-Project/"
 ---
 
-I work at [DreamOval](http://dreamoval.com) and we were priviledged to be part of the [Stanford Seed](https://seed.stanford.edu/)
-training this year. One of the higlights of the training was **Design Thinking**.
+I work at [DreamOval](http://dreamoval.com) and we were privileged to be part of the [Stanford Seed](https://seed.stanford.edu/)
+training this year. One of the highlights of the training was **Design Thinking**.
 
 What is  [design thinking](https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)?. 
 *(follow link)*
 
 I wanted to apply design thinking to a hobby project. A hardware one. It shouldn't be too simple. This automatically takes out the *hello world* of hardware projects,blinking LED, out of this. 
-Definately not a *mars rover* too. So this is an *in-between kinda project*. But closer to the blinking
+Definitely not a *mars rover* too. So this is an *in-between kinda project*. But closer to the blinking
 LED.
 
-We are going to design,code,build a simple robot. But let me add that the real focus of this is not the project itself. But ***the processess involved in getting this done***.
+We are going to design,code,build a simple robot. But let me add that the real focus of this is not the project itself. But ***the processes involved in getting this done***.
 
 It would be a 4-part *(maybe 5)* series. This is the first part of the series.
 
@@ -42,7 +42,7 @@ from the beginning. Most hobby project tend to be open ended because we get carr
 Empathy involves us sharing the feeling of another.This makes this part a bit tricky because we are
 about to share our feeling with ourselves. If you are working in groups you can pick partners.
 
-After interveiwing myself. This is what I gathered. Its ok if your results vary.
+After interviewing myself. This is what I gathered. Its ok if your results vary.
  
     * This is a hobby. 
 	* Budget is very small. 
@@ -59,7 +59,7 @@ Thats about it. Lets move on to the next step.
 ***2. Define***
 
 Now using our interview results we can define what the user wants. We should be able to see the user's
-real problem. Definig it brings us a step closer to solving the real problem for the user.This can be iterative process.
+real problem. Defining it brings us a step closer to solving the real problem for the user.This can be iterative process.
 
 
 	* Robot should use relatively cheap components.
@@ -73,9 +73,9 @@ real problem. Definig it brings us a step closer to solving the real problem for
 ***3. Ideate***
 
 This is where we find possible solutions to the problem. Building up on what we gathered from defining the 
-problems/soultions. 
+problems/solutions. 
 
-Based on what we defined I was able to create 5 categories. The one section I didn't gather from interviewing myself is power source,I added that. Its not always neccesary to list out categories.
+Based on what we defined I was able to create 5 categories. The one section I didn't gather from interviewing myself is power source,I added that. Its not always necessary to list out categories.
 List out all the ideas that come to mind here for creating the solution. Then strike out the ones that 
 won't work. 
 
@@ -130,7 +130,7 @@ won't work.
     <li>
       <span>
         <h2>Control</h2>
-        <p class="strike-through">Send and recieve signals via Wi-Fi</p>
+        <p class="strike-through">Send and receive signals via Wi-Fi</p>
         <p> - via Bluetooth</p>
         <p> - via ?</p>        
       </span>
@@ -141,11 +141,11 @@ won't work.
 
 
 
-After striking out the ones not necesary based on requirements gahtered
+After striking out the ones not neccesary based on requirements gathered
 under the sections, ***Empathy*** and ***Define***. 
 
 I had to remove most of the ideas because I wanted to keep the budget really small.
-The best approach however is to prototype each of the ideas prefereably in groups.  
+The best approach however is to prototype each of the ideas preferably in groups.  
 
 ***4. Prototype***
 

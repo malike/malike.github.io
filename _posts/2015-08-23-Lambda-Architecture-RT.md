@@ -9,7 +9,7 @@ image: im_an_idiot.png
 redirect_from: "/Lambda-Architecture-RT/"
 ---
 
-How I would use [Apache Storm](https://storm.apache.org/),[Apache Kafka](http://kafka.apache.org/),[ElasticSearch](http://www.elasticsearch.org/) and [MongoDB](https://www.mongodb.org) for a monitoring system based on the lambda architecture.
+How I would use [Apache Storm](https://storm.apache.org/),[Apache Kafka](http://kafka.apache.org/),[Elasticsearch](http://www.elasticsearch.org/) and [MongoDB](https://www.mongodb.org) for a monitoring system based on the lambda architecture.
 
 
 **What is** ***[Lambda Architecture](https://www.manning.com/books/big-data)?***
@@ -40,7 +40,7 @@ deploy and have it up and running in no time.
 
 So I picked [MongoDB](https://www.mongodb.org).
 
-*Disclaimer: I picked [MongoDB](https://www.mongodb.org) as* ***my*** *batch layer,it doesn't in anyway mean its the best option(at the time of this post). So If you or your organisation has a better reason to pick a [MongoDB](https://www.mongodb.org) alternative. Please do.* 
+*Disclaimer: I picked [MongoDB](https://www.mongodb.org) as* ***my*** *batch layer,it doesn't in anyway mean its the best option(at the time of this post). So If you or your organization has a better reason to pick a [MongoDB](https://www.mongodb.org) alternative. Please do.* 
 <br>
 <br>
 
@@ -62,7 +62,7 @@ And also Nathan Marz who first wrote about the Lambda Architecture created [Apac
 
 Why *[Apache Kafka](http://kafka.apache.org/)?*
 
-We need a resilent messaging queue that would feed the speed layer with the stream of data. Sort of like a pool for 
+We need a resilient messaging queue that would feed the speed layer with the stream of data. Sort of like a pool for 
 all stream data.So we have one source for getting the data.
 
 [This](http://www.infoq.com/articles/apache-kafka) and [this](http://java.dzone.com/articles/exploring-message-brokers) is why I chose Apache Kafka. 
@@ -71,7 +71,7 @@ all stream data.So we have one source for getting the data.
 
 * **Serving Layer and Why use** ***[ElasticSearch](http://www.elasticsearch.org/)?***
 
-*"Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search. Through its robust set of APIs and query DSLs, plus clients for the most popular programming languages, Elasticsearch delivers on the near limitless promises of search technology"*
+*"Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architecture is from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search. Through its robust set of APIs and query DSLs, plus clients for the most popular programming languages, Elasticsearch delivers on the near limitless promises of search technology"*
 
 
 The serving layer combines the output from the batch and speed layer. This layer helps us get the data,combined, from
@@ -83,7 +83,7 @@ The serving layer provides and answers to getting historical(batch) data and rea
 
 If you end up using [MongoDB](https://www.mongodb.org) as your batch layer you can use  [MongoDB River](https://github.com/richardwilly98/elasticsearch-river-mongodb). This would help keep (backup) records for the historical data with minimal configuration.
 <br>
-For the real-time data.Our Spead layer using a Storm Spout would help us aggregate and index real-time data in [ElasticSearch](http://www.elasticsearch.org/).
+For the real-time data.Our Speed layer using a Storm Spout would help us aggregate and index real-time data in [ElasticSearch](http://www.elasticsearch.org/).
 
   
 

@@ -14,7 +14,7 @@ If you read [this](http://malike.github.io/Spring-Metrics), we talked about capt
 
 In this post I'll show you how to do a *little* more with that data using Spring Metrics and [Lambda Architecture](http://malike.github.io/Lambda-Architecture-RT) which we also talked about. 
 
-I'll categorise this post under two sections ***capturing time series of metrics*** and ***persisting metrics***
+I'll categorize this post under two sections ***capturing time series of metrics*** and ***persisting metrics***
 
 
 **1. Capture Time Series**

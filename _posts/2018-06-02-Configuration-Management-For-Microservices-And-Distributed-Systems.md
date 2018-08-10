@@ -40,9 +40,9 @@ When researching on using etcd as config server, I came across these resources [
 _"ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications"_
 
 This is supported in [Spring](http://cloud.spring.io/spring-cloud-zookeeper/). If you use Apache Kafka, you'll know how it relies on 
-Zookeeper's high availability and fault tolerent for storing and retrival of K,V pair of topic and consumer configurations.
+Zookeeper's high availability and fault tolerant for storing and retrieval of K,V pair of topic and consumer configurations.
 
-I found [this](https://mmcgrana.github.io/2014/05/getting-started-with-zookeeper-and-go.html) when resarching on using Zookeeper with Go. It's quite old but with very good explaination.
+I found [this](https://mmcgrana.github.io/2014/05/getting-started-with-zookeeper-and-go.html) when researching on using Zookeeper with Go. It's quite old but with very good explanation.
 
 Netflix's [Apache Curator](https://curator.apache.org/) is java client for Zookeeper which extremely helpful with especially when not using the Spring stack. 
 
@@ -72,7 +72,7 @@ a. Location of config Server, by adding this to property file. This informs the 
 
 It uses this convention `http://localhost:8888/{spring.application.name}-{profile}.yml`. Where `spring.application.name` is the name of the service configured in your spring application. 
 
-b. Secondly using `@RefreshScope` annotation to stereotypically distinguish properties to be updated after refresh and those that should not. In our sample application
+b. Secondly using `@RefreshScope` annotation to distinguish properties to be updated after refresh and those that should not. In our sample application
 
 c. Lastly
 Hit the `/refresh` endpoint of the service for our service to reload the new configurations.
@@ -86,7 +86,7 @@ How would you replicate a similar thing in a Golang application,
 We've seen how the manual configuration update works. But it could be better to not involve manual processes. 
 One advantage of this is,it reduces the amount of work to done with after configuration updated and also helps us use Spring Cloud Config in microservices or distributed systems not written using the Spring stack.
 
-This would require a messaging queue,`Apache Kafka` or `RabbitMQ`. `Redis` is also a supported by Spring Cloud Config. It also requres a git webhook in `Github`,`Bitbucket` or `Gitlab` to tell the config server if any change is pushed, that is for configuration files hosted on `Git`. The messaging queue enables services subscribed to _see_ the configurations files updated. 
+This would require a messaging queue,`Apache Kafka` or `RabbitMQ`. `Redis` is also a supported by Spring Cloud Config. It also requires a git webhook in `Github`,`Bitbucket` or `Gitlab` to tell the config server if any change is pushed, that is for configuration files hosted on `Git`. The messaging queue enables services subscribed to _see_ the configurations files updated. 
 
 To get this working we'll need to add dependencies for `spring-cloud-config-monitor` and `spring-cloud-starter-bus-kafka`( you can use either redis or rabbit bus dependency)
 
@@ -160,7 +160,7 @@ or this for git
     
     spring.cloud.config.server.git.uri=https://github.com/malike/centralized-configuration.git
 
-**4. HTTP  Support For Retreiving Conifgurations**
+**4. HTTP  Support For Retrieving Configurations**
 
 Although Spring Cloud Config is a java based application it can work with a variety of languages due to it's HTTP API. 
 
@@ -179,15 +179,15 @@ and `production` as `message-summary-production.properties` or `message-summary-
 
 **5. Security**
 
-Spring Boot/Cloud apps can be secured simple by adding `spring-boot-starter-security` and with the [right configuration](https://spring.io/guides/gs/securing-web/) we can enable basic authenctication for the Config Server.
+Spring Boot/Cloud apps can be secured simple by adding `spring-boot-starter-security` and with the [right configuration](https://spring.io/guides/gs/securing-web/) we can enable basic authentication for the Config Server.
 
 We can also take it a step further to restrict passwords and sensitive data in the configuration. This would prevent anyone who has access to the configuration files from seeing our database credentials in plain text. Spring Cloud Config supports encrypting and decrypting properties. You can read more [here](https://cloud.spring.io/spring-cloud-config/single/spring-cloud-config.html#_encryption_and_decryption)
-This would require you to install Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy File which is not part of the JVM by default. By prepending passwords and sensitive properties with `{cipher}` and in qoutes. Sensitive properties would be encrypted in git but would be decrypted on requests by services. Spring Cloud Config also comes with two end points to help in ecrypting and decrypting properties.
+This would require you to install Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy File which is not part of the JVM by default. By pre-pending passwords and sensitive properties with `{cipher}` and in quotes. Sensitive properties would be encrypted in git but would be decrypted on requests by services. Spring Cloud Config also comes with two end points to help in encrypting and decrypting properties.
 
 To enable [creating your key](https://cloud.spring.io/spring-cloud-config/single/spring-cloud-config.html#_creating_a_key_store_for_testing) and [adding it to your config server](https://cloud.spring.io/spring-cloud-config/single/spring-cloud-config.html#_key_management).
 
 
-There many pros and cons of using Spring Cloud Config, I think I've highlighted the pros a lot in this post but some of the major cons associated with this the Config Server becoming an app on it's own that needs to be managed and monitored like the microservices or distributed systems are not already enough and the fact that it going down can force services to either not start or or rely on fallback configurations but then again these same points maybe seen as pros in other infracstructurres.
+There many pros and cons of using Spring Cloud Config, I think I've highlighted the pros a lot in this post but some of the major cons associated with this the Config Server becoming an app on it's own that needs to be managed and monitored like the microservices or distributed systems are not already enough and the fact that it going down can force services to either not start or or rely on fallback configurations but then again these same points maybe seen as pros in other infrastructures.
 I do hope though that you've understood how to use Spring Cloud Config to serve configurations in a microservice or distributed system. 
 
 
