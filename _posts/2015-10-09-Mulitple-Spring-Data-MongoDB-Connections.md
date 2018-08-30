@@ -41,7 +41,7 @@ public MongoTemplate secondaryMongoTemplate() throws Exception {
 ```
 
 
-Now all MongoRepository implmentations would use the same datasource configuration as your custom MongoTemplate.
+Now all MongoRepository implementations would use the same datasource configuration as your custom MongoTemplate.
 
 > Ok. Later.
 

@@ -63,12 +63,12 @@ counterService.increment("sample.metric"); //adds 1
 or that
 
 ```java
-counterService.decrement("sample.metric"); //substracts 1
+counterService.decrement("sample.metric"); //subtracts 1
 ```
 
 **3. PublicMetrics**
 
-This uses a different apporoach. Implement [PublicMetrics](https://github.com/spring-projects/spring-boot/blob/v1.2.5.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java).  
+This uses a different approach. Implement [PublicMetrics](https://github.com/spring-projects/spring-boot/blob/v1.2.5.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java).  
 
 then
 

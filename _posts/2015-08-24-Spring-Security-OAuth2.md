@@ -78,7 +78,7 @@ The main difference between the two is...
 
 *"The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session"*
 
-Although SessionStorage is not supported in many browers. You can get ***localStorage*** working as ***sessionStorage*** with some extra js codes or just use polyfill to provide this functionality in unsupported browsers.
+Although SessionStorage is not supported in many browsers. You can get ***localStorage*** working as ***sessionStorage*** with some extra js codes or just use polyfill to provide this functionality in unsupported browsers.
 
 You can then pick tokens from the ***sessionStorage*** (or ***localStorage*** ) and send as HTTP headers.
 
@@ -147,7 +147,7 @@ I chose MongoDB. I need to mention that were some issues with the MongoDB conver
 ---------------------------------------------------------------------------
 
 *There are some [issues](http://stackoverflow.com/questions/36809721/spring-boot-resource-server-not-able-to-authorize-roles-with-oauth-2-access-toke) with the project,if you use it as it is you would have problems with the [antMatchers](http://docs.spring.io/autorepo/docs/spring-security/3.2.3.RELEASE/apidocs/org/springframework/security/config/annotation/web/builders/HttpSecurity.html)*
-*They do not work when you have custome urls to be permitted. For example :*
+*They do not work when you have custom urls to be permitted. For example :*
 *If I wanted this url **[http://localhost:8080/donotauthenticate]()** to be permitted with code below*
 
 ```java	

@@ -44,7 +44,7 @@ Honestly [this](http://www.eucognition.org/index.php?page=leg-coordination-in-in
 
 From the diagram above, if the part labelled **2** (front right leg) moves forward that is 120 degrees **3** (front left leg)would be 60 degrees. The back and forth of this movement would push *Bug1* forward.
 
-This servo can be controlled to steer *Bug1* as well. The front servo is maily responsible for how Bug1 moves and where it turns. <br/>
+This servo can be controlled to steer *Bug1* as well. The front servo is mainly responsible for how Bug1 moves and where it turns. <br/>
 
 
 {::nomarkdown}

@@ -117,7 +117,7 @@ What the dependencies give us?
    1.&nbsp;[Fluentlenium](http://fluentlenium.org/docs/). 
 _"FluentLenium helps you writing readable, reusable, reliable and resilient UI functional tests for the browser."_
 
-   2.&nbsp;[RestAssured](http://rest-assured.io/) and [HamCrest](http://hamcrest.org/) give us the oppurtunity to test rest service and validate.
+   2.&nbsp;[RestAssured](http://rest-assured.io/) and [HamCrest](http://hamcrest.org/) give us the opportunity to test rest service and validate.
 
    3.&nbsp;[Mockito](http://site.mockito.org/) 
 _"Mockito is used to mock interfaces so that a dummy functionality can be added to a mock interface that can be used in unit testing. This tutorial should help you learn how to create unit tests with Mockito as well as how to use its APIs in a simple and intuitive way..."_
@@ -208,7 +208,7 @@ but this
 We refactor to fix this as well. We fix this red by creating the api for saving user data. We create a test for our signup HTTP API in the 
 SignupControllerTest to first return 200. 
 
-Then another test to confirm your details get saved once the parametes are passed to the api. This failing test would require us to create
+Then another test to confirm your details get saved once the parameters are passed to the api. This failing test would require us to create
 a UserServiceTest class.
 
 We continue with this cycle of creating a test,which would fail,refactor till its passes. Then we move on to the next specification.  

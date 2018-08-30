@@ -18,7 +18,7 @@ redirect_from: "/Configuration-Management-For-Microservices-And-Distributed-Syst
 
 
 Centralized configuration management is one of the major requirements in a microservice system. Although one of the major
-proponents of a microservice system is discentralized services, certain parts still need to be centralized to ease
+proponents of a microservice system is decentralized services, certain parts still need to be centralized to ease
 deployment pains. 
 Centralized configuration is simply a main _location_ where all microservices can _pick_ their specific configurations to help them run perfectly.
 
@@ -48,7 +48,7 @@ Netflix's [Apache Curator](https://curator.apache.org/) is java client for Zooke
 
 ##### 3. [Consul](https://consul.io/)
 
-Consul is not just a _K,V_ store, one underlying principle of Config Servers. It has `Service Discovery`, `Service Health Monitoring` as well as other functionalities which makes it the prefered choice. With it's well documented [apis and sdks](https://www.consul.io/api/libraries-and-sdks.html) with examples in different languages and frameworks it would be the best option. But the simplicity of the next option is what makes this post not about Consul. 
+Consul is not just a _K,V_ store, one underlying principle of Config Servers. It has `Service Discovery`, `Service Health Monitoring` as well as other functionalities which makes it the preferred choice. With it's well documented [apis and sdks](https://www.consul.io/api/libraries-and-sdks.html) with examples in different languages and frameworks it would be the best option. But the simplicity of the next option is what makes this post not about Consul. 
 
 {::nomarkdown}
 </br></br>

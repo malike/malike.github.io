@@ -16,7 +16,7 @@ How I would use [Apache Storm](https://storm.apache.org/),[Apache Kafka](http://
 
 It's a design principle where all derived calculations in a data system can be expressed as a re-computation function over all of your data. This re-computation would be done over immutable data readily available. 
 
-***Lambda Architecture*** is made of **3** layers,part played in the Lambda Architecture is summarised below :
+***Lambda Architecture*** is made of **3** layers,part played in the Lambda Architecture is summarized below :
 
 1. **Batch Layer** which computes functions over all data with high latency and rewrites immutable fact transformations into your data stores (*e.g. via Hadoop,MongoDB in our case*)
 2. **Speed Layer** which computes functions over recent data with low latency and mutates your real-time data stores directly (*e.g. via Storm*)
@@ -77,7 +77,7 @@ all stream data.So we have one source for getting the data.
 The serving layer combines the output from the batch and speed layer. This layer helps us get the data,combined, from
 both the batch and serving layer.  
 
-Output from the batch and speed layers are stored in the serving layer, which responds to ad-hoc queries by returning precomputed views or building views from the processed data
+Output from the batch and speed layers are stored in the serving layer, which responds to ad-hoc queries by returning pre-computed views or building views from the processed data
 
 The serving layer provides and answers to getting historical(batch) data and real time data(speed). 
 

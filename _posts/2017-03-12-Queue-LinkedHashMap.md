@@ -13,7 +13,7 @@ redirect_from: "/Queue-LinkedHashMap/"
  A well implemented HashMap in Java would give you performance of *O(1)* for _get_ and _put_.
 Well implemented in this case means your _hashCode_ and _equals_ are helpful to reduce collisions.
 
-From Java 7 to Java 8 the HashMap implementation changed from using  *linkedList* to *balance trees* to resolve collisions, this means for very bad implementation (sometimes there are just collisions) of _hashCode_ which may result in many collitions we'll no longer have a LinkedList of items,which would give us *O(n)* worst case. Balance trees improve this with a *O(log n)* from Java 8.
+From Java 7 to Java 8 the HashMap implementation changed from using  *linkedList* to *balance trees* to resolve collisions, this means for very bad implementation (sometimes there are just collisions) of _hashCode_ which may result in many collisions we'll no longer have a LinkedList of items,which would give us *O(n)* worst case. Balance trees improve this with a *O(log n)* from Java 8.
 This [article](https://dzone.com/articles/hashmap-performance) talks about it in depth.
 
 

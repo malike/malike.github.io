@@ -45,7 +45,7 @@ I can't talk about OLAP without mentioning **[OLTP](https://en.wikipedia.org/wik
 
 ### Using Elasticsearch as an OLAP Cube
 
-_Why is [Elasticsearch](https://www.elastic.co/products/elasticsearch)  a stong candidate to be used as OLAP based on our understanding of OLAP?_
+_Why is [Elasticsearch](https://www.elastic.co/products/elasticsearch)  a strong candidate to be used as OLAP based on our understanding of OLAP?_
 
 **_1. How Elasticsearch supports multidimensional data analysis_**
 

@@ -141,7 +141,7 @@ won't work.
 
 
 
-After striking out the ones not neccesary based on requirements gathered
+After striking out the ones not necessary based on requirements gathered
 under the sections, ***Empathy*** and ***Define***. 
 
 I had to remove most of the ideas because I wanted to keep the budget really small.
