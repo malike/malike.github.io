@@ -8,7 +8,10 @@ google-ID: 'UA-66835539-1'
 menu:
 - {name: 'About', path: 'menu', url: 'about.html'}
 - {name: 'Archive', path: 'menu', url: 'archive.html'}
-- {name: 'Cloud/Distributed Systems', path: 'menu', url: 'distributed.html'}
+# - {name: 'Mobile', path: 'menu', url: 'mobile.html'}
+# - {name: 'Security', path: 'menu', url: 'hack.html'}
+- {name: 'SRE', path: 'menu', url: 'sre.html'}
+- {name: 'Distributed Systems', path: 'menu', url: 'distributed.html'}
 - {name: 'Electronics', path: 'menu', url: 'electronics.html'}
 - {name: 'FOSS', path: 'menu', url: 'foss.html'}
 - {name: 'POC', path: 'menu', url: 'poc.html'}
