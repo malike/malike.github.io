@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  'Docker : "To Contain Or Not To Contain"'
+title: "To Contain Or Not To Contain"
 layout: post
 author: "malike_st"
 section: devops,sre
