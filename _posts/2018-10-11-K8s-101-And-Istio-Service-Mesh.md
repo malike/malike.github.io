@@ -14,7 +14,7 @@ image: CPU_comic_strip.png
 
 ### 1. Kubernetes [[K8S](https://medium.com/@rothgar/why-kubernetes-is-abbreviated-k8s-905289405a3c)]
 
-The [Processes](https://12factor.net/processes) factor of [12 factors](https://12factor.net/) which means having stateless services, that can be easily scaled by deploying multiple instances of the same service is what defines microservices. But deploying/managing multiple different services with the option to deploy multiple instances of some of them to scale them can be a challenge if it's not organized properly. Coupled with having required features like load balancing,monitoring/health checks,replication, auto scaling and being able to roll updates with little overhead.
+The [Processes](https://12factor.net/processes) factor of [12 factors](https://12factor.net/) which means having stateless services, that can be easily scaled by deploying multiple instances of the same service. Deploying and management multiple instances of these stateless services can be a challenge if not organized properly. Coupled with having required features like load balancing, monitoring/health checks, replication, auto scaling and being able to roll updates with little overhead.
 
 This is where Kubernetes comes in. Kubernetes _is an open-source system for automating deployment, scaling, and management of containerized applications_
 
