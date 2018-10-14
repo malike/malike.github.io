@@ -9,19 +9,17 @@ tags: [docker,kubernetes,distributed,go,java]
 image: ci-broken.png
 ---
 
+If you've read my previous post, [Configuration Management for Microservices](https://malike.github.io/Configuration-Management-For-Microservices-And-Distributed-Systems.html), I created two microservices one in `Golang` and the other in `Java`. Using the two, I'll want to show how we can use [Travis CI](https://travis-ci.org/) for the  [Build, Release and Run](https://12factor.net/build-release-run) phase.
 
-If you've read my previous post, [Configuration Management for Microservices](https://malike.github.io/Configuration-Management-For-Microservices-And-Distributed-Systems.html), I created two microservices one in `Golang` and the other in `Java`. Using the two, I'll want to show how we can use [Travis CI]() for the  [Build, Release and Run](https://12factor.net/build-release-run) phase.
-
-In a later article we'll use our docker images with [Kubernetes]().
+In a later article we'll use our docker images with [Kubernetes](https://kubernetes.io/).
 
 ### 1. Building Docker Images From Github for Go and Java Repos
 
-To build a docker image for a our source codes we'll create  `Dockerfile`. 
-The `Dockerfile` is a set of instructions to build and properly describe a docker image. 
+To build a docker image for a our source codes we'll create  `Dockerfile`.
+The `Dockerfile` is a set of instructions to build and properly describe a docker image.
 Here's what some of the instructions mean :
 
-
-##### Sample `Dockerfile` for Java 
+##### Sample `Dockerfile` for Java
 
 ```Dockerfile
 FROM openjdk:8
@@ -36,9 +34,7 @@ ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urando
 The [`Go Dockerfile`](https://github.com/malike/go-kafka-alert/blob/master/Dockerfile) is a multi-stage approach to build light weight images explained into details 
 [here](https://medium.com/@pierreprinetti/the-go-dockerfile-d5d43af9ee3c).
 
-
 **FROM**: Image with its tag as build-base. This is mostly [alpine linux](https://hub.docker.com/_/alpine/) because it's light and allows debugging of containers. There are other options as well like [scratch](https://hub.docker.com/_/scratch/).
-
 
 **RUN**: Is used to execute a shell command-line within the target system.
 
@@ -52,10 +48,7 @@ The [`Go Dockerfile`](https://github.com/malike/go-kafka-alert/blob/master/Docke
 
 **CMD**: Pass arguments to the **ENTRYPOINT** in the target system.
 
-
 *You can check out the [docker documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) to read more on it and [this](https://medium.com/@pierreprinetti/the-go-dockerfile-d5d43af9ee3c) on how to build build small size docker containers for `Go`*
-
-
 
 ### 2. Setting up our CI server : [Travis CI](https://docs.travis-ci.com/user/getting-started/).
 
@@ -63,13 +56,14 @@ _"Travis CI a hosted, distributed continuous integration service used to build a
 
 Like the `Dockerfile` is a set of instructions to build a docker image, `.travis.yml` also contains a set of instructions for Travis CI to build and test the source hosted on Github.
 
-In our case we'll use Travis CI to test and compile our source and then package a docker image that can easily be run. Travis CI doesn't store the docker images so we need to push to a docker repository. This can be a private one or a public one. For this example we'll use the public [DockerHub](https://hub.docker.com/). 
+In our case we'll use Travis CI to test and compile our source and then package a docker image that can easily be run. Travis CI doesn't store the docker images so we need to push to a docker repository. This can be a private one or a public one. For this example we'll use the public [DockerHub](https://hub.docker.com/).
 
-To build and test our project,which uses maven, we'll add this. 
+To build and test our project,which uses maven, we'll add this.
 
 ```yml
 script: cd $SERVICE_DIR && mvn clean verify
 ```
+
 The maven goal test is intentionally left our because Travis CI does that by [default](https://blog.travis-ci.com/2017-03-30-deploy-maven-travis-ci-packagecloud/) once we specify java, I'm using the `script` because thats way let Travis CI building sub directories projects.
 This works because I've specified the sub directories as environment variables.
 
@@ -84,8 +78,9 @@ After successfully building the source we'll need to package it using the docker
 
 ```yml
 services:
-    - docker 
+    - docker
 ```
+
 I wrote a bash script to handle the building and the uploading of the images. It uses the known 
 [`docker build`](https://docs.docker.com/engine/reference/commandline/build/), [`docker tag`](https://docs.docker.com/engine/reference/commandline/tag/#description) and [`docker push`](https://docs.docker.com/engine/reference/commandline/push/) commands to complete this task.
 
@@ -100,9 +95,7 @@ env:
 
 *For more details on writing your [travis configuration](https://docs.travis-ci.com/user/customizing-the-build/) to read more on it*
 
-
 OK, now that we have a Docker image that is built by Travis, how do we use it? Well, we want to push the image to a Docker Registry for storage. Users can then pull the image from the registry to the machine where they will run the image.
-
 
 ##### Complete [`.travis.yml`](https://github.com/malike/go-kafka-alert/blob/master/.travis.yml) would look like this for a Java application
 
@@ -114,8 +107,8 @@ jdk:
 before_script:
   - mongo go_kafka_alert --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'  
 services:
-- mongodb 
-- docker 
+- mongodb
+- docker
  
 env:
   global:
@@ -146,12 +139,3 @@ This would be continued in the next article with other things we can introduce i
 [https://12factor.net/](https://12factor.net/)
 
 [https://medium.com/@pierreprinetti/the-go-dockerfile-d5d43af9ee3c](https://medium.com/@pierreprinetti/the-go-dockerfile-d5d43af9ee3c)
-
-
-
-
-
-
-
-
-
