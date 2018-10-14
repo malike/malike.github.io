@@ -143,20 +143,14 @@ metadata:
   name: cloudnative-java-service
   labels:
     app: cloudnative-java-service
+    version: cloudnative-java-service
 spec:
   containers:
-    - image: stmalike/cloudnative-java-service
-      name: cloudnative-java-service
-      resources:
-        limits:
-          memory: "64Mi"
-          cpu: "1"
-        requests:
-          memory: "64Mi"
-          cpu: "0.5"
-      ports:
-        - containerPort: 80
-```
+  - image: stmalike/java-service
+    name: cloudnative-java-service
+    ports:
+    - containerPort: 8080
+  ```
 
 **kind** : Type of resource.<br/>
 **name** : Name for resource<br/>
