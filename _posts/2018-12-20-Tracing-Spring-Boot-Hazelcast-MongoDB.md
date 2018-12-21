@@ -133,16 +133,18 @@ curl -X POST \
 Now we can head over to Zipkin to verify the results.
 
 ![zipkin hazelcast write]({{ site.github.url }}/assets/img/hazelcast-write.png)
-###### <center>Hazelcast Write</center>
+###### <center>Hazelcast Write took : **3.431 ms**</center>
 
 ![zipkin mongodb write ]({{ site.github.url }}/assets/img/mongodb-write.png)
-###### <center>MongoDB Write</center>
+###### <center>MongoDB Write took : **417.952 ms**</center>
 
 ![zipkin hazelcast read]({{ site.github.url }}/assets/img/hazelcast-read.png)
-###### <center>Hazelcast Read</center>
+###### <center>Hazelcast Read took : **2.218 ms** </center>
 
 ![zipkin mongodb read]({{ site.github.url }}/assets/img/mongodb-read.png)
-###### <center>MongoDB Read</center>
+###### <center>MongoDB Read took : **107.486 ms**</center>
+
+As you can see the difference is quite clear.
 
 ### 4. Use Cases for Hazelcast
 
@@ -164,8 +166,3 @@ These are just some of the few use cases for Hazelcast, you can find other use c
 ### References
 
 [https://blog.hazelcast.com/](https://blog.hazelcast.com/)
-
-[https://dzone.com/articles/spring-boot-with-embedded-mongodb](https://dzone.com/articles/spring-boot-with-embedded-mongodb)
-
-
-
