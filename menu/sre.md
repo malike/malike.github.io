@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Site Reliability Engineering < DevOps
+title: Site Reliability Engineering / DevOps
 ---
 
 

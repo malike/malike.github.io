@@ -14,7 +14,7 @@ menu:
 - {name: 'Distributed Systems', path: 'menu', url: 'distributed.html'}
 - {name: 'Electronics', path: 'menu', url: 'electronics.html'}
 - {name: 'FOSS', path: 'menu', url: 'foss.html'}
-- {name: 'POC', path: 'menu', url: 'poc.html'}
+- {name: 'PoC', path: 'menu', url: 'poc.html'}
 # - {name: 'Contact', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
