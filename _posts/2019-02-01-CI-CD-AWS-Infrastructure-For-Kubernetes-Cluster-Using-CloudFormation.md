@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Continuos Integration, Continuos Deployment with AWS Using EKS, CodeBuild, CodePipeline, ECR and CloudFormation"
+title: "Continuous Integration, continuous Deployment with AWS Using EKS, CodeBuild, CodePipeline, ECR and CloudFormation"
 layout: post
 author: "malike_st"
 section: distributed,devops
@@ -109,7 +109,7 @@ Putting everything together we have the [infrastructure](https://github.com/mali
 
 Putting the infrastructure together with the pipeline we can set up a `staging` environment and a `production` environment. But due to cost (:money_with_wings:) I'm only going to set up and staging environment.
 
-### Summary  : Continuos Integration/ Continuos Deployment
+### Summary  : Continuous Integration/ Continuous Deployment
 
 To summarize what we've done so far :
 

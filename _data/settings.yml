@@ -13,7 +13,7 @@ menu:
 - {name: 'SRE', path: 'menu', url: 'sre.html'}
 - {name: 'Distributed Systems', path: 'menu', url: 'distributed.html'}
 - {name: 'Electronics', path: 'menu', url: 'electronics.html'}
-- {name: 'FOSS', path: 'menu', url: 'foss.html'}
+- {name: 'OSS', path: 'menu', url: 'foss.html'}
 - {name: 'PoC', path: 'menu', url: 'poc.html'}
 # - {name: 'Contact', path: 'menu', url: 'contact.html'}
 
