@@ -18,7 +18,7 @@ Assume you've designed your application using a microservice architecture and fo
 
  ***a.  service that creates the user in the database,<br>*** 
  ***b.   ...another service that send an event to a messaging queue,<br>*** 
- ***c.   and finally a service to send an email to the user reacting to the event created in the messaging queue.<br>*** 
+ ***c.   and finally a service to send an email to the user reacting to the event created in the messaging queue.<br>***
 
 FYI this is just signup. *(BTW I don't recommend starting a project like this unless it's an already existing project you've decided to break apart but I'll leave that for another day).*
 
@@ -29,8 +29,7 @@ This is where distributed tracing comes in. As a request propagates between mult
 _Whats a trace?_
 
 A trace is just a record of how a request is propagated between services, the life cycle of a request. This is normally a collection of spans depending on the journey of the request.
-A span is the smallest unit in distributed tracing, it normally consists of an id,parent id to indicate if span is connected to another and tags to give more information on the span and other meta data. 
-
+A span is the smallest unit in distributed tracing, it normally consists of an id,parent id to indicate if span is connected to another and tags to give more information on the span and other meta data.
 
 There are so many tools for recording and visualizing traces , eg [Jaeger](https://github.com/jaegertracing), [OpenTracing](http://opentracing.io/), [Opencensus](https://opencensus.io/) etc.. but this post is focused on two of them, Opencensus and [Spring Cloud Sleuth](https://cloud.spring.io/spring-cloud-sleuth/) and how to visualize trace data in [Kibana](https://www.elastic.co/products/kibana) and [Zipkin](https://zipkin.io/). 
 
@@ -46,9 +45,7 @@ Since the goal of this post is to find ways to understand traces for your system
 
 The sample applications would help us understand what each library,that is Sleuth and Opencensus, give us and how sending the trace to Zipkin and/or ELK can help us understand our distributed systems in production and the value each framework brings to the overall goal.
 
-
 #### 2. Distributed Tracing tools
-
 
 ***a. Using Spring Cloud Sleuth***
 
@@ -60,10 +57,10 @@ dependency as part of your project it automatically does the tracing for you.
 The dependency which you can find below:
 
 ```xml
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-sleuth</artifactId>
+</dependency>
 ```
 
 ***b. Using Opencensus***
@@ -71,8 +68,6 @@ The dependency which you can find below:
 This an opensource distributed tracing tool started [Google](https://opensource.googleblog.com/2018/01/opencensus.html).
 
 The reason I picked this was in as much as the "magic" that Spring Cloud Sleuth is, there might be certain uses magic won't work and also one that is not dependent on the Spring stack and not only limited to the JVM. This is where Opencensus comes in.
-
-
 
 #### 4. Why an Elasticsearch Trace Exporter
 
@@ -86,19 +81,15 @@ From the FOSS links you can tell some of them are still in progress but you get 
 
 The best reason of all is search. Being able to search traces to know why _**a service request took 20 secs on Monday 21st September at 3:43 PM for Kofi accessing the service from Tokyo rather than the 5 seconds we have as SLA for response time**_. This possible with Elasticsearch.
 
-
 ***a. Spring Cloud Sleuth Elasticsearch Exporter*** *
 
 Spring Cloud Sleuth doesn't support exporting to Elasticsearch. So this might be a little confusing. To send trace data from a Spring Boot project to the ELK stack would require [Logstash](https://www.elastic.co/products/logstash). The **"L"** in the **ELK**.
 
 _Logstash is an open source, server-side data processing pipeline that ingests data from a multitude of sources simultaneously, transforms it, and then sends it to your favorite “stash.”_
 
-In our case the stash is Elasticsearch. You can find the logstash config we used for our sample project [here](https://github.com/malike/distributed-tracing/blob/master/spring-cloud-sleuth/src/main/resources/logback.xml). A simple config that sends logs in a particular format to logstash running on `127.0.0.1` port `5000` from the config file. 
-
+In our case the stash is Elasticsearch. You can find the logstash config we used for our sample project [here](https://github.com/malike/distributed-tracing/blob/master/spring-cloud-sleuth/src/main/resources/logback.xml). A simple config that sends logs in a particular format to logstash running on `127.0.0.1` port `5000` from the config file.
 
 [<img src="https://raw.githubusercontent.com/malike/distributed-tracing/master/spring-cloud-sleuth/distributed_tracing_3.png">](Sample Kibana Dashboard from trace)
-
-
 
 **b. Opencensus Elasticsearch Exporter**
 
@@ -106,10 +97,7 @@ Opencensus doesn't have an Elasticsearch exporter either. I've worked on and sub
 
 For now you can check out on my personal [github](https://github.com/malike/opencensus-java) for the Elasticsearch exporter I wrote for Opencensus.
 
-
-
 [<img src="https://raw.githubusercontent.com/malike/distributed-tracing/master/opencensus/distributed_tracing_elk_discover.png?raw=true">](Sample Opencensus trace exported to Elasticsearch)
-
 
 #### 5. Why an Zipkin Trace Exporter
 
@@ -125,18 +113,19 @@ This is really cool especially if you're the type that's really strict on _"REST
 
 To get our sample Spring Cloud Sleuth to send trace data to Zipkin is just to add this line in our properties file
 
-1.Where our zipkin server is located 
+1.Where our zipkin server is located
+
 ```yml	
 spring.zipkin.baseUrl=http://localhost:9411
-```    
+```
 
 2.To enable this functionality in our app and also make sure we have this dependency
 
-```xml	
-	    <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        </dependency>
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+</dependency>
 ```
 
 There's also another configuration to check the percentage of data we send to zipkin. The default is 10%. If you want 50% just add this to your properties file. Note that although it is a percentage, the accepted value is a `double` between `0.1` to `1.0` where `0.1` is `10%`.
@@ -148,16 +137,16 @@ spring.sleuth.sampler.probability=0.5
 If you're already on Spring Boot 2.0 you can also use annotations to create our own spans. You can find an example of this usage on [github](https://github.com/malike/distributed-tracing/tree/master/spring-cloud-sleuth) and also read more on it [here](https://cloud.spring.io/spring-cloud-static/spring-cloud-sleuth/2.0.0.M9/single/spring-cloud-sleuth.html#_sleuth_with_zipkin_via_http). This requires these dependencies or later:
 
 ```xml
-	<dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <version>2.0.0.M9</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-      <version>2.0.0.M9</version>
-    </dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-sleuth</artifactId>
+    <version>2.0.0.M9</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+    <version>2.0.0.M9</version>
+</dependency>
 ```
 
 ***b. Opencensus Zipkin Exporter***
@@ -165,17 +154,11 @@ If you're already on Spring Boot 2.0 you can also use annotations to create our 
 The team at Opencensus already wrote a zipkin exporter with an example on how to export trace data with it.
 You can find the documentation  and codes [here](https://github.com/census-instrumentation/opencensus-java/tree/master/exporters/trace/zipkin).
 
-
-
-Hopefully with this post I hope you can appreciate what each library gives us and the part Zipkin and ELK stack play in visualizing traces in a distributed system and can help you make a decision with the attached sample project. 
-
+Hopefully with this post I hope you can appreciate what each library gives us and the part Zipkin and ELK stack play in visualizing traces in a distributed system and can help you make a decision with the attached sample project.
 
 [<img src="https://github.com/malike/distributed-tracing/blob/master/spring-cloud-sleuth/distributed_tracing_1.png?raw=true">](Sample traces on Zipkin)
 
-
 > Codes are available on [github](https://github.com/malike/distributed-tracing.git)
-
-
 
 <br>
 <br>
@@ -183,6 +166,4 @@ Hopefully with this post I hope you can appreciate what each library gives us an
 
 [http://microservices.io/patterns/observability/distributed-tracing.html](http://microservices.io/patterns/observability/distributed-tracing.html)
 
-
 [https://cloud.spring.io/spring-cloud-static/spring-cloud-sleuth/2.0.0.M9/single/spring-cloud-sleuth.html](https://cloud.spring.io/spring-cloud-static/spring-cloud-sleuth/2.0.0.M9/single/spring-cloud-sleuth.html)
-
