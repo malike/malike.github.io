@@ -105,11 +105,3 @@ send a [PR](https://github.com/malike/elasticsearch-report-engine/compare)
 [http://datawarehouse4u.info/OLTP-vs-OLAP.html](http://datawarehouse4u.info/OLTP-vs-OLAP.html)
 
 [http://www.myreadingroom.co.in/notes-and-studymaterial/65-dbms/563-olap-and-its-characteristics.html](http://www.myreadingroom.co.in/notes-and-studymaterial/65-dbms/563-olap-and-its-characteristics.html)
-
-
-
-
-
-
-
-
