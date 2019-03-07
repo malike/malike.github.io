@@ -7,7 +7,7 @@ title: Open Source Software
 {% if post.fossname %}
 <div class="card">
   <a href="{{ post.fossurl }}">  
-  <img src="http://via.placeholder.com/220x220?text=Logo">
+  <img src="{{ post.fossimage }}" style="width: 220px">
   <div class="card-container">
     <h4><b>{{ post.fossname }}</b></h4> 
     <div class="description">{{ post.fossdescription }}</div> 

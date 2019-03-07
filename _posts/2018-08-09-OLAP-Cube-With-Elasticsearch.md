@@ -7,6 +7,7 @@ section: foss
 fossname: elasticsearch-report-engine
 fossurl: https://malike.github.io/elasticsearch-report-engine/
 fossdescription: An Elasticsearch plugin to return query results as either PDF,HTML or CSV
+fossimage: http://via.placeholder.com/220x220?text=Logo
 tags: [olap,elasticsearch,report,analytics]
 image: foss_1.jpg
 ---

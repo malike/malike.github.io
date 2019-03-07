@@ -8,6 +8,7 @@ section: distributed
 tags: [distributed,configuration,zookeeper,elasticsearch,microservice]
 fossname: go-kafka-alert
 fossurl: https://malike.github.io/go-kafka-alert/   
+fossimage: http://via.placeholder.com/220x220?text=Logo
 fossdescription: A Go application that feeds of data from Apache Kafka to send alerts via SMS,EMAIL or WebHook delivery channels.
 projectname: Configuration Management for Cloud Native/Distributed Systems
 projectdescription: Project to show how to use Centralized Configuration Management in a cloud native or distributed systems

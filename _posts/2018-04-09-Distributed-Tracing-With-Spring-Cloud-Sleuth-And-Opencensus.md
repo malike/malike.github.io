@@ -9,6 +9,10 @@ image: microservices-and-monolithic.png
 projectname: Distributed Tracing for Microservices
 projectdescription: Distributed tracing project  using Zipkin and ELK to visualize traces exported with Spring Cloud Sleuth, Logstash and Opencensus
 projecturl: https://github.com/malike/distributed-tracing
+fossname: "Opencensus : Elasticsearch Trace Exporter"
+fossurl: https://opencensus.io/
+fossdescription: An OpenCensus Elasticsearch trace exporter that exports data to Elasticsearch
+fossimage: https://opencensus.io/img/logo-sm.svg
 redirect_from: "/Distributed-Tracing-With-Spring-Cloud-Sleuth-And-Opencensus/"
 ---
 
