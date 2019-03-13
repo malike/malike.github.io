@@ -30,14 +30,13 @@ Now to set up a simple Spring Boot project to use Hazelcast we need to add these
 
 ```xml
 <dependency>
-      <groupId>com.hazelcast</groupId>
-      <artifactId>hazelcast</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.hazelcast</groupId>
-      <artifactId>hazelcast-spring</artifactId>
-    </dependency>
-
+  <groupId>com.hazelcast</groupId>
+  <artifactId>hazelcast</artifactId>
+</dependency>
+<dependency>
+  <groupId>com.hazelcast</groupId>
+  <artifactId>hazelcast-spring</artifactId>
+</dependency>
 ```
 
 Add our configuration file help us connect to Hazelcast.
