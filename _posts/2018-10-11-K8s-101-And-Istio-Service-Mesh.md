@@ -8,7 +8,7 @@ section: devops,distributed,sre
 projectname: Learning Kubernetes and Istio Service Mesh
 projectdescription: A project that uses Github, Travis CI, Docker, Dockerhub, Kubernetes and Istio Service Mesh to deploy Go and Java microservices with an HTML frontend using both the Ramped and Canary Deployments. 
 projecturl: https://github.com/malike/cloud-native-kubernetes
-tags: [kubernetes,docker,microservice]
+tags: [kubernetes,microservice]
 image: CPU_comic_strip.png
 ---
 
