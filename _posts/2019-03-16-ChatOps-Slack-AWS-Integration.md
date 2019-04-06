@@ -45,12 +45,17 @@ One important aspect to consider when integrating all these extensions to automa
 
 ***d). Structure to get everyone on board***
 
-Finaly design a structure to keep the chatbot's conversations as organised as posible. Imagine a use case where by chatbot spams the marketing team about CPU usage of a service. This may be considered as spam thereby affecting company-wide adoption. To create a culture that buys into ChatOps proper grouping on conversations from the bot needs to be created and gradually features and functionalities are integrated into daily workflows per team/department needs.
+Finally design a structure to keep the chatbot's conversations as organized as possible. Imagine a use case where by chatbot spams the marketing team about CPU usage of a service. This may be considered as spam thereby affecting company-wide adoption. To create a culture that buys into ChatOps proper grouping on conversations from the bot needs to be created and gradually features and functionalities are integrated into daily workflows per team/department needs.
 
-Onboarding should be made as simple as possible with actionable alerts. For example if there's an alert that a service is down, the true value of chatbot should also provide a means to start the service from the chat platform. As much as possible onboardigng should require company /organization sso flow so it doesn't take another signup form before people can start using it.
+Onboarding should be made as simple as possible with actionable alerts. For example if there's an alert that a service is down, the true value of chatbot should also provide a means to start the service from the chat platform. As much as possible onboarding should require company /organization sso flow so it doesn't take another signup form before people can start using it.
 
 ### 2. Building A Sample ChatBot : AWS S3 and IAM Policy Monitoring with Slack Slash Commands
 
+By putting the cart before the horse, let's tackle packing first it has to be simple to install no matter the environment, so we'll use a container to help abstract this. You can find `Dockerfile` and `docker-compose.yml` files. Using [travis-ci](https://malike.github.io/Build-Release-Dockerize-Run-With-Travis-CI.html) we can automate the building and release of the bot.
+
+Now we just want a bot to be able to do simple things, like running a `bash` or `shell` script from a bastion host. I've decided to use Java Spring for this, you can use any language you're comfortable with.
+
+I've added two utility scripts as well to help test, one that lists  all "public" S3 buckets on AWS and the other lists all users without MFA. Both scripts are specific to AWS and use the `aws-cli`
 
 > Source code available on [Github](https://github.com/malike/slack-bot)
 
