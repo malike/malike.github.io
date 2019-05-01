@@ -57,6 +57,8 @@ Now we just want a bot to be able to do simple things, like running a `bash` or 
 
 I've added two utility scripts as well to help test, one that lists  all "public" S3 buckets on AWS and the other lists all users without MFA. Both scripts are specific to AWS and use the `aws-cli`
 
+Now the main part, integrating the bot to work with Slack. From the 
+
 > Source code available on [Github](https://github.com/malike/slack-bot)
 
 <br>
