@@ -509,7 +509,8 @@ th, td {
   overflow:hidden;
   padding:3em;
 }
-.stickynote ul li span{
+.stickynote ul li span,
+  .stickynote ul li a img{
   text-decoration:none;
   color:#333;
   background:#ffc;
@@ -532,12 +533,14 @@ th, td {
   font-size:10px;
   margin:5px 2px;
 }
-.stickynote ul li span{
+.stickynote ul li span,
+  .stickynote ul li a img{ 
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
   -moz-transform:rotate(-6deg);
 }
-.stickynote  ul li:nth-child(even) span{
+.stickynote  ul li:nth-child(even) span,
+  .stickynote  ul li:nth-child(even) a img{ 
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
@@ -545,7 +548,8 @@ th, td {
   background: #cfc;
   top:5px;
 }
-.stickynote ul li:nth-child(3n) span{
+.stickynote ul li:nth-child(3n) span,
+  .stickynote ul li:nth-child(3n) a img{  
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
@@ -553,6 +557,7 @@ th, td {
   background:#ccf;
   top:-5px;
 }
+.stickynote ul li:nth-child(5n) img,
 .stickynote ul li:nth-child(5n) span{
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
@@ -564,6 +569,11 @@ th, td {
 .stickynote ol{text-align:center;}
 .stickynote ol li{display:inline;padding-right:1em;}
 .stickynote ol li a{color:#fff;}
+
+.stickynote ul li a img{
+  background: #ddd !important;
+  padding:2px;
+}
 
 .strike-through{
   text-decoration: line-through;
