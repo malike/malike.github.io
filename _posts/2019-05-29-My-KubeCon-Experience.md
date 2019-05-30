@@ -21,28 +21,28 @@ This post is just to tell you about my experience, why should go for the next on
 
 <ul >
     <li>
-    <a href="/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon_2.jpg" style="width:310px" />
+    <a href="https://malike.github.io/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="https://malike.github.io/assets/img/kubecon_2.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-       <a href="/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
-      <img src="/assets/img/kubecon_3.jpg" style="width:280px" />
+       <a href="https://malike.github.io/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
+      <img src="https://malike.github.io/assets/img/kubecon_3.jpg" style="width:280px" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon_4.jpg" style="width:350px;" />
+    <a href="https://malike.github.io/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="https://malike.github.io/assets/img/kubecon_4.jpg" style="width:350px;" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon_7.jpg" style="width:310px" />
+    <a href="https://malike.github.io/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="https://malike.github.io/assets/img/kubecon_7.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon_12.jpg" style="width:270px" />
+    <a href="https://malike.github.io/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="https://malike.github.io/assets/img/kubecon_12.jpg" style="width:270px" />
       </a>
     </li>
    </ul>
