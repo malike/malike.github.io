@@ -500,6 +500,10 @@ th, td {
 	color: #ff6600;
 }
 
+.full-screen-gallery{
+width: 300%;
+    margin: 0 -90%;
+}
 
 .stickynote ul,li{
   list-style:none;
@@ -557,7 +561,6 @@ th, td {
   background:#ccf;
   top:-5px;
 }
-.stickynote ul li:nth-child(5n) img,
 .stickynote ul li:nth-child(5n) span{
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
@@ -566,6 +569,14 @@ th, td {
   background:#ECB1B7;
   top:-10px;
 }
+
+.stickynote ul li:nth-child(5n) img{
+  position:relative;
+  background:#ECB1B7;
+  top:-10px;
+}
+
+
 .stickynote ol{text-align:center;}
 .stickynote ol li{display:inline;padding-right:1em;}
 .stickynote ol li a{color:#fff;}
