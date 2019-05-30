@@ -20,28 +20,28 @@ This post is just to tell you about my experience, why should go for the next on
 
 <ul >
     <li>
-    <a href="{{ site.github.url }}/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.github.url }}/assets/img/kubecon_2.jpg" style="width:310px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_2.JPG" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_2.JPG" style="width:310px" />
       </a>
     </li>     
     <li>
-       <a href="{{ site.github.url }}/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
-      <img src="{{ site.github.url }}/assets/img/kubecon_3.jpg" style="width:280px" />
+       <a href="{{ site.github.url }}/assets/img/kubecon_3.JPG" target="_blank" rel="noopener noreferrer"> 
+      <img src="{{ site.github.url }}/assets/img/kubecon_3.JPG" style="width:280px" />
       </a>
     </li>     
     <li>
-    <a href="{{ site.github.url }}/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.github.url }}/assets/img/kubecon_4.jpg" style="width:350px;" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_4.JPG" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_4.JPG" style="width:350px;" />
       </a>
     </li>     
     <li>
-    <a href="{{ site.github.url }}/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.github.url }}/assets/img/kubecon_7.jpg" style="width:310px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_7.JPG" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_7.JPG" style="width:310px" />
       </a>
     </li>     
     <li>
-    <a href="{{ site.github.url }}/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.github.url }}/assets/img/kubecon_12.jpg" style="width:270px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_12.JPG" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_12.JPG" style="width:270px" />
       </a>
     </li>
    </ul>
