@@ -70,7 +70,7 @@ There's this qoute by Kevin Spacey, not sure if it his character Frank Underwood
 
 _"If you're lucky enough to do well,it's your responsibility to send the elevator back down"_.
 
-After all these amazing exepriences, some of which I've not included in this post, It will be selfish not to help create an avenue bridge CNCF oppurtunities, platform to share knowledge about CNCF tools to some of my collegeus who are already into majority of these tools but working in silos. This is not just for people who already know these but people who are also willing to start in the CNCF space.
+After all these amazing experiences, some of which I've not included in this post, It will be selfish not to help create an avenue to bridge CNCF opportunities and also a platform to share knowledge about opensource tools under the CNCF umbrella. This is not just for people who already know these but people who are also willing to start in the cloud native space.
 
 Chatting with [Kasper Nissen](https://twitter.com/phennex?lang=en) during one of the "Meet the Ambassador" sessions I enquired about starting a [CNCF Ghana](https://twitter.com/cncf_ghana) chapter. Learnt a lot about how he started [#CloudNativeAarhus](https://twitter.com/hashtag/CloudNativeAarhus?src=hash&lang=en) and how they've been able to keep an active community this far.
 
