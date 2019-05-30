@@ -21,28 +21,28 @@ This post is just to tell you about my experience, why should go for the next on
 
 <ul >
     <li>
-    <a href="https://malike.github.io/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="https://malike.github.io/assets/img/kubecon_2.jpg" style="width:310px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_2.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-       <a href="https://malike.github.io/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
-      <img src="https://malike.github.io/assets/img/kubecon_3.jpg" style="width:280px" />
+       <a href="{{ site.github.url }}/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
+      <img src="{{ site.github.url }}/assets/img/kubecon_3.jpg" style="width:280px" />
       </a>
     </li>     
     <li>
-    <a href="https://malike.github.io/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="https://malike.github.io/assets/img/kubecon_4.jpg" style="width:350px;" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_4.jpg" style="width:350px;" />
       </a>
     </li>     
     <li>
-    <a href="https://malike.github.io/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="https://malike.github.io/assets/img/kubecon_7.jpg" style="width:310px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_7.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-    <a href="https://malike.github.io/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="https://malike.github.io/assets/img/kubecon_12.jpg" style="width:270px" />
+    <a href="{{ site.github.url }}/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.github.url }}/assets/img/kubecon_12.jpg" style="width:270px" />
       </a>
     </li>
    </ul>
@@ -61,7 +61,7 @@ Later that evening, I went for an Istio Meetup at Carrer d'En Cortines. It was p
 
 I couldn't believe I met [Joe Beda](https://twitter.com/jbeda) and got a signed book from him as well.
  
-Oh, there was time for fun as well, this year we got lucky to celebrate Kubernetes 5th birthday. 5 years for the "Cloud Native OS", got to see the beautiful town of Poblo de Escober and then the AWS party on the last day. Made new connections, found new opensource technologies to contribute and use for differnt projects. It was simply **amazing**.
+Oh, there was time for fun as well, this year we got lucky to celebrate Kubernetes 5th birthday. 5 years for the "Cloud Native OS", got to see the beautiful town of Poblo de Escober and then the AWS party on the last day. Made new connections, found new opensource technologies to contribute and use for different projects. It was simply **amazing**.
 
 ### What next : CNCF Ghana Chapter
 
