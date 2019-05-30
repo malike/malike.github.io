@@ -21,28 +21,28 @@ This post is just to tell you about my experience, why should go for the next on
 
 <ul >
     <li>
-    <a href="/assets/img/kubecon/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon/kubecon_2.jpg" style="width:310px" />
+    <a href="/assets/img/kubecon_2.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/kubecon_2.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-       <a href="/assets/img/kubecon/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
-      <img src="/assets/img/kubecon/kubecon_3.jpg" style="width:280px" />
+       <a href="/assets/img/kubecon_3.jpg" target="_blank" rel="noopener noreferrer"> 
+      <img src="/assets/img/kubecon_3.jpg" style="width:280px" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon/kubecon_4.jpg" style="width:350px;" />
+    <a href="/assets/img/kubecon_4.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/kubecon_4.jpg" style="width:350px;" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon/kubecon_7.jpg" style="width:310px" />
+    <a href="/assets/img/kubecon_7.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/kubecon_7.jpg" style="width:310px" />
       </a>
     </li>     
     <li>
-    <a href="/assets/img/kubecon/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/kubecon/kubecon_12.jpg" style="width:270px" />
+    <a href="/assets/img/kubecon_12.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/kubecon_12.jpg" style="width:270px" />
       </a>
     </li>
    </ul>
@@ -57,7 +57,7 @@ Later that evening, I went for an Istio Meetup at Carrer d'En Cortines. It was p
 
  There were so many sessions to pick from. Mostly centered around how people used cloud native opensource tools to improve certain deliverables, mistakes they made using the cloud native tools and how you shouldn't do what they did or just introduction to new ways of doing things. The were session on Mental health, Lightning talks on diverse topics and also chance to meet maintainers of some of the tools we use in the cloud native space. Imagine breaking the slack/zoom or gitter barrier to finally meet and talk with maintainers you've worked with. I got to meet [Bogdan Drutu](https://github.com/bogdandrutu) who is one of the maintainers of [OpenCensus](https://opencensus.io/), I contributed an [elasticsearch trace exporter](https://github.com/census-instrumentation/opencensus-java) to help visualize distributed traces in Kibana. By the way if you use OpenCensus kindly read about [the merger](https://medium.com/opentracing/merging-opentracing-and-opencensus-f0fe9c7ca6f0) between OpenCensus and [OpenTracing](https://opentracing.io/) to from OpenTelemetry.
 
-<img src="{{ site.github.url }}/assets/img/kubecon/kubecon_book.JPG" stysle="width:291px;height:518px" alt="Joe Beda" />
+<img src="{{ site.github.url }}/assets/img/kubecon_book.JPG" stysle="width:291px;height:518px" alt="Joe Beda" />
 
 I couldn't believe I met [Joe Beda](https://twitter.com/jbeda) and got a signed book from him as well.
  
@@ -72,7 +72,7 @@ _"If you're lucky enough to do well,it's your responsibility to send the elevato
 
 After all these amazing exepriences, some of which I've not included in this post, It will be selfish not to help create an avenue bridge CNCF oppurtunities, platform to share knowledge about CNCF tools to some of my collegeus who are already into majority of these tools but working in silos. This is not just for people who already know these but people who are also willing to start in the CNCF space.
 
-Chatting with [Kasper Nissen](https://twitter.com/phennex?lang=en) during one of the "Meet the Ambassador" sessions I enquired about starting a CNCF Ghana chapter. Learnt a lot about how he started [#CloudNativeAarhus](https://twitter.com/hashtag/CloudNativeAarhus?src=hash&lang=en) and how they've been able to keep an active community this far.
+Chatting with [Kasper Nissen](https://twitter.com/phennex?lang=en) during one of the "Meet the Ambassador" sessions I enquired about starting a [CNCF Ghana](https://twitter.com/cncf_ghana) chapter. Learnt a lot about how he started [#CloudNativeAarhus](https://twitter.com/hashtag/CloudNativeAarhus?src=hash&lang=en) and how they've been able to keep an active community this far.
 
 I'm really excited for what's next and what myself and a couple of people; [Adane Nana](https://github.com/v3rse), [Addico Samuel](https://github.com/samaddico), [Banini Mawumefa](https://github.com/Mawumefa), [Boadu Kwabena](https://github.com/biblicalph), [Obugyei Eunice](https://github.com/Euniceadu) and [Quartey Papafio Winnie](https://github.com/winniequartey) and  are ready to start a CNCF in Ghana to not just share knowledge but also help people on how to contribute to some of the opensource technologies under the [cncf.io](https://cncf.io).
 Just like KubeCon + CloudNativeCon we will do our utmost best to make our Code of Conduct very visible to build an all inclusive CNCF Ghana chapter.
