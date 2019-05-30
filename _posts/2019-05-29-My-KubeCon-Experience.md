@@ -15,7 +15,6 @@ This post is just to tell you about my experience, why should go for the next on
 
 ### 1. Let the games begin
 
-{::nomarkdown}
 
 <div class="full-screen-gallery stickynote">
 
@@ -47,7 +46,6 @@ This post is just to tell you about my experience, why should go for the next on
     </li>
    </ul>
   </div> 
-{:/}
 
 The first thing you'll notice will be the [Code of Conduct](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/attend/code-of-conduct/). It was literally everywhere,  so everyone adheres to the rules of engagement.
 
