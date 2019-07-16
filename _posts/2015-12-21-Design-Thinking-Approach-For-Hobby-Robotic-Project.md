@@ -12,7 +12,7 @@ redirect_from: "/Design-Thinking-Approach-For-Hobby-Robotic-Project/"
 I work at [DreamOval](http://dreamoval.com) and we were privileged to be part of the [Stanford Seed](https://seed.stanford.edu/)
 training this year. One of the highlights of the training was **Design Thinking**.
 
-What is  [design thinking](https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)?. 
+What is  [design thinking](https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)?.
 *(follow link)*
 
 I wanted to apply design thinking to a hobby project. A hardware one. It shouldn't be too simple. This automatically takes out the *hello world* of hardware projects,blinking LED, out of this. 
@@ -33,11 +33,9 @@ design process I'll rather I pick ATmega328 mcu compared to an arduino.
 The design process is the most difficult part for me. Why? because this is the part you see the end 
 from the beginning. Most hobby project tend to be open ended because we get carried away and run wild with features and upgrades. Using design thinking approach helps in solving this. 
 
-
 ![_config.yml]({{ site.baseurl }}/assets/img/design-thinking.png) 
 
-
-***1. Empathy*** 
+***1. Empathy***
 
 Empathy involves us sharing the feeling of another.This makes this part a bit tricky because we are
 about to share our feeling with ourselves. If you are working in groups you can pick partners.
