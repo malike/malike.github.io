@@ -5,7 +5,7 @@ title:  'Load Testing with k6.io'
 layout: post
 author: "malike_st"
 section: sre,devops
-tags: [gke,kubernetes,istio,sidecar]
+tags: [ci,cd,k6.io,load,testing]
 image: 20180806_voight.png
 ---
 

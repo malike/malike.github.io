@@ -5,7 +5,7 @@ title: "Continuous Integration, continuous Deployment with AWS Using EKS, CodeBu
 layout: post
 author: "malike_st"
 section: distributed,devops
-tags: [distributed,codepipeline,codedeploy,codecommit,codebuild,cloudformation,kubernetes,microservice,k8s,aws,eks]
+tags: [distributed,codepipeline,codedeploy,codecommit,codebuild,cloudformation,microservice,k8s,aws,eks]
 image: n_1_sample_size.jpg
 ---
 

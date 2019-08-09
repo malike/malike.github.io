@@ -9,9 +9,6 @@ image: exploits_of_a_mom.png
 redirect_from: "/Spring-Security-OAuth2-With-LDAP/"
 ---
 
-
-
-
 In [this](http://malike.github.io/Spring-Security-OAuth2/)  post I talked about using Spring Security OAuth2 and MongoDB *(or any database of your choice)*. 
 Today we are going explore the [AuthenticationProvider](https://docs.spring.io/spring-security/site/docs/3.2.7.RELEASE/apidocs/org/springframework/security/authentication/AuthenticationProvider.html) in spring by building LDAP or Active Directory authentication into our SSO microservice which can be used by clients or users.
 
