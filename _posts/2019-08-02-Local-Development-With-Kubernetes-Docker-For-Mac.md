@@ -54,20 +54,20 @@ After successful login, you should see something like this.
 
 Now we've set up Kubernetes locally, how do we deploy our source. We can start of by running a simple nginx server. But before we deploy, let's look at some objects in Kubernetes and what they mean.
 
--**Deployments :**
+***Pods :*** A Pod is the Kubernetes object that represents a group of one or more containers. The smallest deployable object in the Kubernetes object model.
 
--**Pods :**
+***ReplicaSets :*** A ReplicaSet is responsible for a group of identical Pods, or replicas. If there are too few (or too many) Pods, compared to the specification, the ReplicaSet controller will start (or stop) some Pods to rectify the situation.
 
--**ReplicaSets :**
+***Service :*** A way to expose a set of pods as a network service to be easily accessible.
 
--**Service :**
+***Deployments :*** Deployment objects records information about the container image and whatever else it needs to know to start and run the container.
 
 There are more but this is just about what we need to deploy our first application.
 Let's create a deployment called `local-nginx` with this `kubectl create deployment local-nginx --image=nginx`. The `--image` options specifies the image we want to deploy in the pod. Once this completed let's verify our deployments and pod with `kubectl`. Using
 `kubectl describe deployments local-nginx` and `kubectl describe pod nginx` respectively.
 Do note that we can also do this from the dashboard by just navigating pretty straightforward and simple Web UI.
 
-Now how de we access nginx, we'll need to expose our deployment with a service resource using the LoadBalancer type to help us access it. We know that the default port for nginx is 80, so we just need to port-forward the to port 80. `kubectl expose deployment demo-nginx --type=LoadBalancer --name=demo-nginx --port=8080 --target-port=80`. We can verify and confirm is nginx is accesible on port `8080`. Also we can describe the services with `kubectl` or just visualize on the dashboard.
+Now how de we access nginx, we'll need to expose our deployment with a service resource using the LoadBalancer type to help us access it. We know that the default port for nginx is 80, so we just need to port-forward the to port 80. `kubectl expose deployment demo-nginx --type=LoadBalancer --name=demo-nginx --port=8080 --target-port=80`. We can verify and confirm is nginx is accessible on port `8080`. Also we can describe the services with `kubectl` or just visualize on the dashboard.
 
 Now let's try and develop and deploy a custom application 
 
