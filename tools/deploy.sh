@@ -56,6 +56,7 @@ build() {
 }
 
 test() {
+ echo "test"
 #  bundle exec htmlproofer \
 #    --disable-external \
 #    --check-html \
