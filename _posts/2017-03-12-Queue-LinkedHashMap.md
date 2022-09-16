@@ -10,7 +10,6 @@ image:
     width: 800
     height: 500
 alt: .
-redirect_from: "/Queue-LinkedHashMap/"
 ---
 
 
@@ -22,10 +21,10 @@ This [article](https://dzone.com/articles/hashmap-performance) talks about it in
 
 
 
-Now to the main point of this article, there are many In-Memory Key-Pair databases there. Eg: Redis. But just in case you want one built with HashMap data type. Which can get you performance of O(1) for both ***put*** and ***get*** without using a framework HashMaps would be our go-to data structure. 
+Now to the main point of this article, there are many In-Memory Key-Pair databases there. Eg: Redis. But just in case you want one built with HashMap data type. Which can get you performance of O(1) for both ***put*** and ***get*** without using a framework HashMaps would be our go-to data structure.
 
-But the problem with using HashMap as a cache is,if you don't control the size it might blow up your memory. 
-The default HashMap can grow in size. 
+But the problem with using HashMap as a cache is,if you don't control the size it might blow up your memory.
+The default HashMap can grow in size.
 If memory is not your problem you are good to go with HashMap but if you want to control the size and the items to be stored with FIFO priorities then let's continue.
 
 Unfortunately HashMaps don't maintain the order of items when inserted. *Why do we need the order?*, we need the order to determine what gets to *leave* the queue. That is know the order the items were entered.
@@ -47,12 +46,12 @@ By simply extending the properties of [removeEldestEntry](https://docs.oracle.co
 	    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
 	        return size() > maxSize;
 	    }
-	    
+
 	    @Override
 	    public boolean equals(Object obj){
 	        return obj==this;
 	    }
-	    
+
 	    @Override
 	    public int hashCode(){
 	        return System.identityHashCode(this);
@@ -62,7 +61,7 @@ By simply extending the properties of [removeEldestEntry](https://docs.oracle.co
 ```
 
 
-Lets write a test to test our implementation. You can see I've not written tests for all the behaviors of a ListHashMap. 
+Lets write a test to test our implementation. You can see I've not written tests for all the behaviors of a ListHashMap.
 Our main focus is to see if your ***canPushEarliestOut()***  would be <span style="color:#1DA31D">***green***</span>.
 
 ```java

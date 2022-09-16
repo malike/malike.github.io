@@ -10,13 +10,13 @@ image:
     width: 800
     height: 500
 alt: .
-redirect_from: "/Customer-Stickiness-For-Your-Enterprise/"
+
 ---
 
 
 
 
-What is Customer Stickiness? 
+What is Customer Stickiness?
 
 *"The degree to which the existing use of a product or service encourages its continued use as opposed to* *that of a competitor"*.- [investorwords.com](http://www.investorwords.com/4721/stickiness.html)
 
@@ -31,7 +31,7 @@ Now that I've defined the two, let me tell you how to drive customer stickiness 
 
 Knowing your customer means, they mean a lot more to you than the transactions they have with your organization. Helping your organization continue the conversation after the transaction which you can only do well if you know your customer.
 
-Enterprise Nurs has KYC widgets - Core and Customized. Core widgets come out of the box with Enterprise Nurs. Customized widgets can be integrated to show varying KYC data which is required by the enterprise to learn more about their customers. 
+Enterprise Nurs has KYC widgets - Core and Customized. Core widgets come out of the box with Enterprise Nurs. Customized widgets can be integrated to show varying KYC data which is required by the enterprise to learn more about their customers.
 
 
 
@@ -56,7 +56,7 @@ The usage of Enterprise Nurs helps organizations not to be reactive. An enterpri
 
 BI tools help in making decisions. Regular analysis from BI tools gives up-to-date information organizations would need. organizations are able to see trends, notice changes and know when and where to improve the customer retention pipeline to meet the organization's target.
 
-Enterprise Nurs provides a self-service report engine where enterprises can do this with no stress. Enterprise Nurs' ESB unifies data from multiple sources to provide a rich interactive report that can be represented as widgets in the application front-end, emailed regularly as a PDF or XLS, and oh, with drill-downs. Drill-down data that go steps deeper to show what data points make up the rich interactive display. 
+Enterprise Nurs provides a self-service report engine where enterprises can do this with no stress. Enterprise Nurs' ESB unifies data from multiple sources to provide a rich interactive report that can be represented as widgets in the application front-end, emailed regularly as a PDF or XLS, and oh, with drill-downs. Drill-down data that go steps deeper to show what data points make up the rich interactive display.
 
 
 **5. Adoption**
@@ -66,4 +66,4 @@ Enterprise Nurs provides a self-service report engine where enterprises can do t
 Most problems associated with creating sticky customers evolves around the technology solutions, processes used and adoption of the two by staff and this is where Enterprise Nurs comes in
 
 
-> For more [contact the Enterprise Nurs team](http://www.enterprisenurs.com/request-demo/) 
+> For more [contact the Enterprise Nurs team](http://www.enterprisenurs.com/request-demo/)

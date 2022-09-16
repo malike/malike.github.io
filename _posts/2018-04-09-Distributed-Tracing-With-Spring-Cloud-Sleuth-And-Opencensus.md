@@ -3,29 +3,21 @@ layout: post
 comments: true
 title: Distributed Tracing with Spring Cloud Sleuth and Opencensus
 author: malike
-categories: [distributed,sre]
+categories: [distributed,sre,foss]
 tags: [distributed,tracing,opencensus,elasticsearch,microservice]
 image:
  path: /posts/microservices-and-monolithic.png
  width: 800
  height: 500
 alt: .
-projectname: Distributed Tracing for Microservices
-projectdescription: Distributed tracing project  using Zipkin and ELK to visualize traces exported with Spring Cloud Sleuth, Logstash and Opencensus
-projecturl: https://github.com/malike/distributed-tracing
-fossname: "Opencensus : Elasticsearch Trace Exporter"
-fossurl: https://opencensus.io/
-fossdescription: An OpenCensus Elasticsearch trace exporter that exports data to Elasticsearch
-fossimage: https://opencensus.io/img/logo-sm.svg
-redirect_from: "/Distributed-Tracing-With-Spring-Cloud-Sleuth-And-Opencensus/"
 ---
 
 #### 1. What's Distributed Tracing?
 
 Assume you've designed your application using a microservice architecture and for a feature like signup you have:
 
- ***a.  service that creates the user in the database,<br>*** 
- ***b.   ...another service that send an event to a messaging queue,<br>*** 
+ ***a.  service that creates the user in the database,<br>***
+ ***b.   ...another service that send an event to a messaging queue,<br>***
  ***c.   and finally a service to send an email to the user reacting to the event created in the messaging queue.<br>***
 
 FYI this is just signup. *(BTW I don't recommend starting a project like this unless it's an already existing project you've decided to break apart but I'll leave that for another day).*
@@ -39,7 +31,7 @@ _Whats a trace?_
 A trace is just a record of how a request is propagated between services, the life cycle of a request. This is normally a collection of spans depending on the journey of the request.
 A span is the smallest unit in distributed tracing, it normally consists of an id,parent id to indicate if span is connected to another and tags to give more information on the span and other meta data.
 
-There are so many tools for recording and visualizing traces , eg [Jaeger](https://github.com/jaegertracing), [OpenTracing](http://opentracing.io/), [Opencensus](https://opencensus.io/) etc.. but this post is focused on two of them, Opencensus and [Spring Cloud Sleuth](https://cloud.spring.io/spring-cloud-sleuth/) and how to visualize trace data in [Kibana](https://www.elastic.co/products/kibana) and [Zipkin](https://zipkin.io/). 
+There are so many tools for recording and visualizing traces , eg [Jaeger](https://github.com/jaegertracing), [OpenTracing](http://opentracing.io/), [Opencensus](https://opencensus.io/) etc.. but this post is focused on two of them, Opencensus and [Spring Cloud Sleuth](https://cloud.spring.io/spring-cloud-sleuth/) and how to visualize trace data in [Kibana](https://www.elastic.co/products/kibana) and [Zipkin](https://zipkin.io/).
 
 
 _Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. Zipkin’s design is based on the [Google Dapper paper](http://research.google.com/pubs/pub36356.html)_
@@ -47,9 +39,9 @@ _Zipkin is a distributed tracing system. It helps gather timing data needed to t
 Added to these, Zipkin also has a [Rest API](https://zipkin.io/zipkin-api/), two version of it [v1](https://zipkin.io/zipkin-api/zipkin-api.yaml) and [v2](https://zipkin.io/zipkin-api/zipkin2-api.yaml). This makes Zipkin a polyglot server for visualizing traces and effectively see the intercommunication of your services. Hard to find a language that doesn't support REST.
 
 
-But what if we want more, for example visualize more data from traces and understand little more of our services in production that we can't get from logs. This is where the [ELK stack](https://www.elastic.co/elk-stack) comes in. The ELK stack is really awesome and if you don't know about it you can read more on it with a Google search. 
+But what if we want more, for example visualize more data from traces and understand little more of our services in production that we can't get from logs. This is where the [ELK stack](https://www.elastic.co/elk-stack) comes in. The ELK stack is really awesome and if you don't know about it you can read more on it with a Google search.
 
-Since the goal of this post is to find ways to understand traces for your system, I'll show how to use two distributed tracing libraries to send trace data to Zipkin and the ELK stack. 
+Since the goal of this post is to find ways to understand traces for your system, I'll show how to use two distributed tracing libraries to send trace data to Zipkin and the ELK stack.
 
 The sample applications would help us understand what each library,that is Sleuth and Opencensus, give us and how sending the trace to Zipkin and/or ELK can help us understand our distributed systems in production and the value each framework brings to the overall goal.
 
@@ -59,7 +51,7 @@ The sample applications would help us understand what each library,that is Sleut
 
 For Java/Kotlin projects using the [Spring](https://spring.io/ ) stack it should be quite easy to get started with this. Since this requires almost nothing to get it started with. You can check out the sample project from [github](https://github.com/malike/distributed-tracing).
 
-My reason for picking Spring Cloud Sleuth is the simplicity. It requires almost nothing to set it up and once you have the 
+My reason for picking Spring Cloud Sleuth is the simplicity. It requires almost nothing to set it up and once you have the
 dependency as part of your project it automatically does the tracing for you.
 
 The dependency which you can find below:
@@ -79,9 +71,9 @@ The reason I picked this was in as much as the "magic" that Spring Cloud Sleuth 
 
 #### 4. Why an Elasticsearch Trace Exporter
 
-I love the ELK stack. I've used all or parts of it for operational analysis, data analytics,data lake,data warehouse, data prediction in different projects. I've actually written some FOSS projects for Elasticsearch as well. 
+I love the ELK stack. I've used all or parts of it for operational analysis, data analytics,data lake,data warehouse, data prediction in different projects. I've actually written some FOSS projects for Elasticsearch as well.
 
-One of the ways I love to work on FOSS projects is that at the end of it all, I want anyone to be able to use a combination of my opensource projects. So I try to find ways to link all the FOSS projects I work on. 
+One of the ways I love to work on FOSS projects is that at the end of it all, I want anyone to be able to use a combination of my opensource projects. So I try to find ways to link all the FOSS projects I work on.
 
 I picked Elasticsearch based on my past experience with it, Kibana gives us so much power to visualize the data in Elasticsearch and some of the FOSS projects I've worked on which when put together can enable someone generate trace data reports [pdf,csv or html](http://malike.github.io/elasticsearch-report-engine), configure alerts based on certain metrics via [sms,email and api](https://malike.github.io/go-kafka-alert/) and also build an [ML algorithm](https://malike.github.io/elasticsearch-recommendation-engine/) on trace data to predict performance of your services.
 
@@ -123,7 +115,7 @@ To get our sample Spring Cloud Sleuth to send trace data to Zipkin is just to ad
 
 1.Where our zipkin server is located
 
-```yml	
+```yml
 spring.zipkin.baseUrl=http://localhost:9411
 ```
 

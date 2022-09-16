@@ -5,7 +5,6 @@ title: Spring Metrics For Simple Event Monitoring
 author: malike
 categories: [tech]
 tags: [documentation,sample]
-redirect_from: "/Spring-Metrics/"
 image:
     path: /posts/screwupcolor.png
     width: 800
@@ -14,10 +13,10 @@ alt: .
 ---
 
 
-Sometimes (or all the time) you would want to know whats happening in your application's life cycle. 
+Sometimes (or all the time) you would want to know whats happening in your application's life cycle.
 [Spring Boot Metrics](http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-metrics.html) is just the right tool
 for application metrics in any [Spring Boot Application](https://spring.io/guides/gs/spring-boot/). It exposes 2 metrics services, **"Gauge"** ,  **"Counter"** out of the box as well as an interface **PublicMetrics** to capture custom
-metrics. 
+metrics.
 
 We would use all 3 to capture application level metrics.
 
@@ -43,7 +42,7 @@ Autowiring  GaugeService before using it.
 private GaugeService gaugeService;
 ```
 
-then 
+then
 
 ```java
 gaugeService.submit("sample.metric", 20); //20 is sample metric value
@@ -58,7 +57,7 @@ A  Counter records an increment or decrement. Data type is *int*.
 private CounterService counterService;
 ```
 
-this 
+this
 
 ```java
 counterService.increment("sample.metric"); //adds 1
@@ -72,7 +71,7 @@ counterService.decrement("sample.metric"); //subtracts 1
 
 **3. PublicMetrics**
 
-This uses a different approach. Implement [PublicMetrics](https://github.com/spring-projects/spring-boot/blob/v1.2.5.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java).  
+This uses a different approach. Implement [PublicMetrics](https://github.com/spring-projects/spring-boot/blob/v1.2.5.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java).
 
 then
 

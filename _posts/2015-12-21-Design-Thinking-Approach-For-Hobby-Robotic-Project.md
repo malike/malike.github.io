@@ -10,7 +10,6 @@ image:
  width: 800
  height: 500
 alt: .
-redirect_from: "/Design-Thinking-Approach-For-Hobby-Robotic-Project/"
 ---
 
 I work at [DreamOval](http://dreamoval.com) and we were privileged to be part of the [Stanford Seed](https://seed.stanford.edu/)
@@ -19,7 +18,7 @@ training this year. One of the highlights of the training was **Design Thinking*
 What is  [design thinking](https://dschool.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)?.
 *(follow link)*
 
-I wanted to apply design thinking to a hobby project. A hardware one. It shouldn't be too simple. This automatically takes out the *hello world* of hardware projects,blinking LED, out of this. 
+I wanted to apply design thinking to a hobby project. A hardware one. It shouldn't be too simple. This automatically takes out the *hello world* of hardware projects,blinking LED, out of this.
 Definitely not a *mars rover* too. So this is an *in-between kinda project*. But closer to the blinking
 LED.
 
@@ -27,17 +26,17 @@ We are going to design,code,build a simple robot. But let me add that the real f
 
 It would be a 4-part *(maybe 5)* series. This is the first part of the series.
 
-Personally when it comes to my robotic projects. I like to see what I plan to have in the end before 
+Personally when it comes to my robotic projects. I like to see what I plan to have in the end before
 I start. Some people prefer to design their circuits before knowing where to place each component that
-makes their build. But having a design in mind helps me know what components to choose. 
-An example is, if after design I realise I need to build a robot where its size matter during the 
+makes their build. But having a design in mind helps me know what components to choose.
+An example is, if after design I realise I need to build a robot where its size matter during the
 design process I'll rather I pick ATmega328 mcu compared to an arduino.
 
 
-The design process is the most difficult part for me. Why? because this is the part you see the end 
-from the beginning. Most hobby project tend to be open ended because we get carried away and run wild with features and upgrades. Using design thinking approach helps in solving this. 
+The design process is the most difficult part for me. Why? because this is the part you see the end
+from the beginning. Most hobby project tend to be open ended because we get carried away and run wild with features and upgrades. Using design thinking approach helps in solving this.
 
-![_config.yml]({/posts/design-thinking.png) 
+![_config.yml]({/posts/design-thinking.png)
 
 ***1. Empathy***
 
@@ -45,18 +44,18 @@ Empathy involves us sharing the feeling of another.This makes this part a bit tr
 about to share our feeling with ourselves. If you are working in groups you can pick partners.
 
 After interviewing myself. This is what I gathered. Its ok if your results vary.
- 
-    * This is a hobby. 
-	* Budget is very small. 
-	* Robot should be able to move and see its environment. 
+
+    * This is a hobby.
+	* Budget is very small.
+	* Robot should be able to move and see its environment.
 	* User (I) should be able to see what the robot sees.
 	* I should be able to control the robot.
 	* Robot should be able to move on its own.
 	* Again, budget is really small.
-	* Robot should move around easily on its own in 
+	* Robot should move around easily on its own in
 	  a known or unknown environment.
 
-Thats about it. Lets move on to the next step.	
+Thats about it. Lets move on to the next step.
 
 ***2. Define***
 
@@ -69,17 +68,17 @@ real problem. Defining it brings us a step closer to solving the real problem fo
 	* Robot should move by acting on commands from user.
 	* User should "see" what robot "sees".
 	* Robot should not be  huge.
-	* Robot should be able to "think" on its own. 
-	
+	* Robot should be able to "think" on its own.
+
 
 ***3. Ideate***
 
-This is where we find possible solutions to the problem. Building up on what we gathered from defining the 
-problems/solutions. 
+This is where we find possible solutions to the problem. Building up on what we gathered from defining the
+problems/solutions.
 
 Based on what we defined I was able to create 5 categories. The one section I didn't gather from interviewing myself is power source,I added that. Its not always necessary to list out categories.
-List out all the ideas that come to mind here for creating the solution. Then strike out the ones that 
-won't work. 
+List out all the ideas that come to mind here for creating the solution. Then strike out the ones that
+won't work.
 
 {::nomarkdown}
 
@@ -90,9 +89,9 @@ won't work.
       <span>
         <h2>Power Source</h2>
         <p>5V battery that can be changed.</p>
-        <p class="strike-through">Solar ?</p>        
+        <p class="strike-through">Solar ?</p>
       </span>
-    </li> 
+    </li>
     <li>
       <span>
         <h2>Sense & Sight</h2>
@@ -102,14 +101,14 @@ won't work.
         <p class="strike-through">Identify objects by "remembering" them</p>
         <p class="strike-through">Tag objects by shape and/or color</p>
       </a>
-    </li>      
+    </li>
     <li>
       <span>
         <h2>Movement</h2>
         <p class="strike-through">Wheels for movement</p>
-        <p class="strike-through">Tank treads for movement</p>        
+        <p class="strike-through">Tank treads for movement</p>
         <p>Metal bended as legs</p>
-        <p class="strike-through">Fly-- mini drone/quad or tri -copter</p>        
+        <p class="strike-through">Fly-- mini drone/quad or tri -copter</p>
       </span>
     </li>
     <li>
@@ -124,7 +123,7 @@ won't work.
     <li>
       <span>
         <h2>Intelligence</h2>
-        <p class="strike-through">Should be able to remember paths already taken  to pick best 
+        <p class="strike-through">Should be able to remember paths already taken  to pick best
           in terms of distance on another occasion</p>
         <p class="strike-through">Identify objects by "remembering" them</p>
       </span>
@@ -134,20 +133,20 @@ won't work.
         <h2>Control</h2>
         <p class="strike-through">Send and receive signals via Wi-Fi</p>
         <p> - via Bluetooth</p>
-        <p> - via ?</p>        
+        <p> - via ?</p>
       </span>
     </li>
    </ul>
-  </div> 
+  </div>
 {:/}
 
 
 
 After striking out the ones not necessary based on requirements gathered
-under the sections, ***Empathy*** and ***Define***. 
+under the sections, ***Empathy*** and ***Define***.
 
 I had to remove most of the ideas because I wanted to keep the budget really small.
-The best approach however is to prototype each of the ideas preferably in groups.  
+The best approach however is to prototype each of the ideas preferably in groups.
 
 ***4. Prototype***
 
@@ -159,9 +158,9 @@ I use [SketchUp](http://www.sketchup.com/) for building my prototypes. Use whate
 
 <br/>
 
-> Next up we'll continue working on the ***prototype*** section.<br/> 
+> Next up we'll continue working on the ***prototype*** section.<br/>
  Perfect design in SketchUp.<br/>
- Pick  electronic components,design and program test robot.<br/> 
+ Pick  electronic components,design and program test robot.<br/>
  Simulate build and test robot in an environment.<br/>
  Putting it together,build and ***test***.<br/><br/>
  [Part 2 ](http://malike.github.io/Design-Thinking-Approach-For-Robotic-Hobbyist-2)

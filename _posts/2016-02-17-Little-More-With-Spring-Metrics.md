@@ -10,13 +10,12 @@ image:
     width: 800
     height: 500
 alt: .
-redirect_from: "/Little-More-With-Spring-Metrics/"
 ---
 
 
 If you read [this](http://malike.github.io/Spring-Metrics), we talked about capturing and reading application metrics.
 
-In this post I'll show you how to do a *little* more with that data using Spring Metrics and [Lambda Architecture](http://malike.github.io/Lambda-Architecture-RT) which we also talked about. 
+In this post I'll show you how to do a *little* more with that data using Spring Metrics and [Lambda Architecture](http://malike.github.io/Lambda-Architecture-RT) which we also talked about.
 
 I'll categorize this post under two sections ***capturing time series of metrics*** and ***persisting metrics***
 
@@ -41,7 +40,7 @@ Declare your variables
 Increase metric
 
 ```java
-public void increment(String metric) {   
+public void increment(String metric) {
     String time = dateFormat.format(new Date());
     LinkedHashMap<String, LinkedHashMap<String, Integer>> hashMap = timeMap.get(metric);
     hashMap = (timeMap.isEmpty() || null == hashMap) ? new LinkedHashMap<>() : hashMap;
@@ -52,11 +51,11 @@ public void increment(String metric) {
     statusMap.put(metric, count);
     hashMap.put(time, statusMap);
     timeMap.put(metric, hashMap);
-}    
+}
 ```
 
 As you can see it's just for increasing a metric, for decreasing a metric I'm sure you can figure that part out.
- 
+
 
 **2. Persisting to database**
 
@@ -69,15 +68,15 @@ data to the database. You can easily get this done with something like this.
 @Configuration
 public class MetricDBConfig {
 
-    
+
     @Scheduled(initialDelay = 60000, fixedDelay = 60000)
     void saveMetric() {
         //Save to DB for singular or all metrics
     }
-    
+
     public LinkedHashMap getSingularMetric(String metric) {
         //use this to get  time series for a metric
-         return timeMap.get(metric);       
+         return timeMap.get(metric);
     }
 
     //
@@ -96,7 +95,7 @@ public class MetricDBConfig {
 
     @Autowired
     private MetricRepository repository;
-   
+
 
     @Scheduled(initialDelay = 60000, fixedDelay = 60000)
     void saveMetric() {

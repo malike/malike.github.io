@@ -10,7 +10,6 @@ image:
   width: 800
   height: 500
 alt: .
-redirect_from: "/Design-Thinking-Approach-For-Robotic-Hobbyist-2/"
 ---
 
 
@@ -20,18 +19,18 @@ Ok, this is the long overdue part two of where we left [off](http://malike.githu
 
     2. Components from prototype
 
-    3. Program 
+    3. Program
 
     4. Simulation
 
 
 ### 1. Give it a name
 
-Because its movement is modeled after a bug we *(I)* should call it **Bug1**. 
+Because its movement is modeled after a bug we *(I)* should call it **Bug1**.
 
 ### 2. Check prototype and pick components.
 
-If this is not your first electronic project you probably would have identified some components in the prototype. Like the Ultrasonic Sensor and the servos. Two servos one for the front and rear legs for 
+If this is not your first electronic project you probably would have identified some components in the prototype. Like the Ultrasonic Sensor and the servos. Two servos one for the front and rear legs for
 movement.
 
 *New to the hobby [servo](https://www.princeton.edu/~mae412/TEXT/NTRAK2002/292-302.pdf)? What about the [HC-SR04 ultrasonic sensor](http://www.elecfreaks.com/store/download/product/Sensor/HC-SR04/HC-SR04_Ultrasonic_Module_User_Guide.pdf)?*
@@ -39,10 +38,10 @@ movement.
 
 **i. Front Legs with a Servo**
 
-![_config.yml](/posts/front_legs.png) 
+![_config.yml](/posts/front_legs.png)
 
-Bug1 uses two hobby servos for movement. With the arduino as the command. But the position of the two servos 
-to give the required movement is not that straight forward. 
+Bug1 uses two hobby servos for movement. With the arduino as the command. But the position of the two servos
+to give the required movement is not that straight forward.
 
 Honestly [this](http://www.eucognition.org/index.php?page=leg-coordination-in-insect-walking) was what I wanted but the point of this post is to focus on the methodology not the actual project. I had to create a constant reminder of this because I kept drifting away.
 
@@ -63,8 +62,8 @@ This servo can be controlled to steer *Bug1* as well. The front servo is mainly 
 
 <blockquote> <b>Specifications</b><p>&nbsp;</p>
 
-	Operating Speed: 0.17sec / 60 degrees (4.8V no load)<br/> 
-Operating Speed: 0.13sec / 60 degrees (6.0V no load)<br/> 
+	Operating Speed: 0.17sec / 60 degrees (4.8V no load)<br/>
+Operating Speed: 0.13sec / 60 degrees (6.0V no load)<br/>
 Stall torque:12kg/cm(6V)<br/>
 Operation Voltage : 4.8 - 7.2 V <br/>
 Temperature range: 0°C to 55°C<br/>
@@ -83,7 +82,7 @@ Length 300mm<br/>
 **ii. Rear Legs with a Servo**
 
 
-![_config.yml](/posts/rear_legs.png) 
+![_config.yml](/posts/rear_legs.png)
 
 The servo controlling the rear legs is responsible for supporting Bug1. This enables it to have good composure
 when moving or not. Think of it as the second pair of legs designed to make Bug1 *stand* like a table. Its placed such that its movement is restricted to just an up and down movement.
@@ -91,7 +90,7 @@ when moving or not. Think of it as the second pair of legs designed to make Bug1
 
 **iii. Eyes with the HC-SR04 UltraSonic Sensor**
 
-![_config.yml](/posts/ultrasonic_sensor.png) 
+![_config.yml](/posts/ultrasonic_sensor.png)
 
 The UltraSonic sensor helps *Bug1 see* and *sense* the environment to help in the way it reacts to the environment.
 
@@ -111,7 +110,7 @@ The UltraSonic sensor helps *Bug1 see* and *sense* the environment to help in th
  Ranging Distance : 2cm – 400 cm/1″ – 13ft<br/>
 Measuring Angle: 30 degree<br/>
 Trigger Input Pulse width: 10uS<br/>
-Dimension: 45mm x 20mm x 15mm<br/>	
+Dimension: 45mm x 20mm x 15mm<br/>
 </blockquote>
 
 </div>
@@ -121,11 +120,11 @@ Dimension: 45mm x 20mm x 15mm<br/>
 {:/}
 
 
-It works simply by sending an ultrasound of about 40Khz and then listens for the pulse to echo back in time,t. 
+It works simply by sending an ultrasound of about 40Khz and then listens for the pulse to echo back in time,t.
 We can calculate the distance of the object from the sensor (*Bug1*) as
 
 
->Distance from object (m) = 340 (m/s) * t(s) / 2 
+>Distance from object (m) = 340 (m/s) * t(s) / 2
 
 *Because the speed of light is approx 340 m/s at room temperature*
 
@@ -193,14 +192,14 @@ Before we jump in soldering and building *Bug1* lets first run a simulation to s
 If you decide to also use Protues check [this](https://github.com/malike/Bug1/tree/master/Proteus)  or just use the [codes](https://github.com/malike/Bug1/tree/master/Bug1) with any simulation tool.
 
 We can safely test our codes and wiring with ease.
-[![_config.yml](/posts/Bug1.PNG)](https://xkcd.com/1613/) 
+[![_config.yml](/posts/Bug1.PNG)](https://xkcd.com/1613/)
 
 
-If you've  ever used Protues you'd know that some components do not come out of the box. But you can get them online. 
+If you've  ever used Protues you'd know that some components do not come out of the box. But you can get them online.
 
-I'm using this [Arduino - Protues](http://blogembarcado.blogspot.com/) and [HC-SR04 Ultrasonic Sensor - Protues](http://blogembarcado.blogspot.com/). 
+I'm using this [Arduino - Protues](http://blogembarcado.blogspot.com/) and [HC-SR04 Ultrasonic Sensor - Protues](http://blogembarcado.blogspot.com/).
 
 
 > Next up we get to build *Bug1*. <br/> Hopefully the components I ordered would arrive by then
   Simulate the serial communication  and automated movement of *Bug1*
-  <br/>Check out proejct files on [GitHub](https://github.com/malike/Bug1). 
+  <br/>Check out proejct files on [GitHub](https://github.com/malike/Bug1).
