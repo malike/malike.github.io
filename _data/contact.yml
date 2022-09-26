@@ -3,6 +3,12 @@
 -
   type: github
   icon: 'fab fa-github'
+
+-
+  type: gitlab
+  icon: 'fab fa-gitlab'
+  url: 'https://gitlab.com/malike'
+
 -
   type: twitter
   icon: 'fab fa-twitter'
@@ -16,10 +22,6 @@
 #  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
--
-   type: gitlab
-   icon: 'fab fa-gitlab'
-   url:  'https://gitlab.com/malike'
 # -
 #   type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
