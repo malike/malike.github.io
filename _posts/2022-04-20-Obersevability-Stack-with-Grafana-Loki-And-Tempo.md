@@ -117,7 +117,7 @@ is basically the service `http://tempo.observability-system.svc.cluster.local:31
 Putting everything together, our set up should be running succesfully on minikube like below:
 
 
-Now that everything is running, we need to set up a sample app to use the Observability stack. That iss where the [hotrod](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) app by jaegar comes in.
+Now that everything is running, we need to set up a sample app to use the Observability stack. That is where the [hotrod](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) app by jaegar comes in.
 
 
 ![deployed](/posts/observability-stack/deployed-stack.png)
