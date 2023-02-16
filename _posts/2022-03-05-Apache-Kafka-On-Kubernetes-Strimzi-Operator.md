@@ -13,14 +13,15 @@ image:
 alt: apache kafka on k8s .
 ---
 
-[Strimzi](https://strimzi.io/) is a kubernetes operator that enables a way to run an Apache Kafka 
-cluster on Kubernetes in various deployment configurations with simple configurations. Meaning, we easily manage the lifecycle of our kafka deployment.
+[Strimzi](https://strimzi.io/) is a kubernetes operator that enables a way to run an Apache Kafka cluster on Kubernetes
+in various deployment configurations with simple configurations. Meaning, we easily manage the lifecycle of our kafka
+deployment.
 
 The details on how this is done can be found [here](https://strimzi.io/docs/operators/latest/overview.html)
 but to summarize:  There are 4 main operators:
 
-**1. Cluster Operator:** Deploys and manages Apache Kafka clusters, Kafka Connect, Kafka MirrorMaker,
-Kafka Bridge, Kafka Exporter, Cruise Control, and the Entity Operator
+**1. Cluster Operator:** Deploys and manages Apache Kafka clusters, Kafka Connect, Kafka MirrorMaker, Kafka Bridge,
+Kafka Exporter, Cruise Control, and the Entity Operator
 
 **2. Entity Operator:** Comprises the Topic Operator and User Operator
 
@@ -28,21 +29,21 @@ Kafka Bridge, Kafka Exporter, Cruise Control, and the Entity Operator
 
 **4. User Operator:** Manages Kafka users
 
-There are different configuration parameters that can be used for Strimzi as detailed [here](https://strimzi.io/docs/operators/latest/configuring.html)
-However, this example will focus on setting up a minimal cluster with minimal configurations and then confirm if we can connect a client to Kafka.
-
+There are different configuration parameters that can be used for Strimzi as
+detailed [here](https://strimzi.io/docs/operators/latest/configuring.html)
+However, this example will focus on setting up a minimal cluster with minimal configurations and then confirm if we can
+connect a client to Kafka.
 
 ## Kafka configuration with Kubernetes operator pattern
 
 The source can be found [here](https://github.com/malike/kafka-on-k8s-strimzi.git).
 
-I am using FLuxCD to package everything, not just for GitOps, obviously this repo is not set correctly for an end to end GitOps with FluxCD.
-There's a Makefile in the repo, which helps organize the how the PoC will be setup.  
+I am using FLuxCD to package everything, not just for GitOps, obviously this repo is not set correctly for an end to end
+GitOps with FluxCD. There's a Makefile in the repo, which helps organize and how the PoC will be setup.
 
-First we need to install FluxCD for the crds using the make 
+First we need to install FluxCD for the crds using `make`
 
 ```yaml
----
 ---
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
