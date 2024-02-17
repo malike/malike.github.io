@@ -27,7 +27,7 @@ better.
 
 Observability is a close cousin of monitoring, but it's actually different. Monitoring can be considered as a subset of
 observability. Whereas monitoring focuses on predefined metrics, logs and traces, observability focuses on the
-predefined and the undefined. Of course, because one can not tell what will need tp be debugged tomorrow. I am guessing,
+predefined and the undefined. Of course, because one can not tell what will need to be debugged tomorrow. I am guessing,
 otherwise it will probably be fixed today.
 
 There are three main telemetry types considered to build observability.
