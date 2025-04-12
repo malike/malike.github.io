@@ -46,23 +46,23 @@ This data is like digital footprints that customers leave behind as they browse 
 
 Before jumping into complicated algorithms, I first wanted to understand what the data actually tells us. Here are some interesting things I discovered:
 
-1. **Only about 15% of visitors actually make a purchase**. This is normal for e-commerce but means we need to be careful about how we evaluate our predictions.
+ -  **Only about 15% of visitors actually make a purchase**. This is normal for e-commerce but means we need to be careful about how we evaluate our predictions.
 
 ![Distribution of Target Variable](/posts/predictive-analytics/figure1_target_distribution.png)
 
-2. **There's a strong relationship between something called "Page Value" and whether someone makes a purchase**. Page Value is essentially how valuable a page is in leading to a purchase.
+- **There's a strong relationship between something called "Page Value" and whether someone makes a purchase**. Page Value is essentially how valuable a page is in leading to a purchase.
 
 ![Page Values Distribution](/posts/predictive-analytics/figure8_page_values_dist.png)
 
-3. **Returning visitors are more likely to make purchases than new visitors**. This makes sense – people who come back probably already trust the site.
+- **Returning visitors are more likely to make purchases than new visitors**. This makes sense people who come back probably already trust the site.
 
 ![Visitor Type Conversion](/posts/predictive-analytics/figure6_visitor_conversion.png)
 
-4. **Weekend shoppers behave differently than weekday shoppers**.
+- **Weekend shoppers behave differently than weekday shoppers**.
 
 ![Weekend vs Weekday](/posts/predictive-analytics/figure5_weekend_characteristics.png)
 
-5. **Some months have higher purchase rates than others** – November and December show higher conversion rates, likely due to holiday shopping.
+- **Some months have higher purchase rates than others** – November and December show higher conversion rates, likely due to holiday shopping.
 
 ![Monthly Conversion Rates](/posts/predictive-analytics/figure4_monthly_conversion.png)
 
